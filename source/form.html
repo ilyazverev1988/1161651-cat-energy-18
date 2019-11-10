@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Магазин "Cat energy"</title>
+  <title>Подбор программы</title>
 </head>
 
 <body>
@@ -12,14 +12,12 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="" width="" height="" alt="Cat energy">
       </a>
-      <button class="page-header__menu page-header__menu--active">
-        <img class="page-header__menu-image page-header__menu-image--active" src="" width="" height="" alt="Меню">
-      </button>
+      <button class="page-header__menu page-header__menu--icon page-header__menu--active"></button>
       <div class="page-header__wrapper">
         <ul class="page-header__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="">Подбор программы</a></li>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="site-list__item  site-list__item--active"><a>Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -40,15 +38,15 @@
             <input class="animal__input" type="text" name="age" id="age" placeholder="7"></li>
         </ul>
         <ul class="profile__radio select">
-          <li class="select__item"><input class="select__radio select__radio--cheched" type="radio" name="Program"
+          <li class="select__item"><input class="select__radio select__radio--cheched" type="radio" name="program"
               value="Похудение" id="losing" checked>
             <label class="select__label" for="losing">Похудение</label>
           </li>
-          <li class="select__item"><input class="select__radio" type="radio" name="Program" value="Набор массы"
+          <li class="select__item"><input class="select__radio" type="radio" name="program" value="Набор массы"
               id="mass">
             <label class="select__label" for="mass">Набор массы</label>
           </li>
-          <li class="select__item"><input class="select__radio" type="radio" name="Program" value="Не знаю" id="not">
+          <li class="select__item"><input class="select__radio" type="radio" name="program" value="Не знаю" id="not">
             <label class="select__label" for="not">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
@@ -72,8 +70,8 @@
         <h3 class="profile__title profile__title--strip">Дополнительно</h3>
         <ul class="profile__checkbox add">
           <li class="add__item">
-            <input class="add__input add__input--checked" type="checkbox" name="Sweetener" id="Sweetener" checked>
-            <label class="add__label" for="Sweetener">Сахарозаменитель</label>
+            <input class="add__input add__input--checked" type="checkbox" name="sweetener" id="sweetener" checked>
+            <label class="add__label" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="add__item">
             <input class="add__input" type="checkbox" name="water" id="water">
@@ -84,8 +82,8 @@
             <label class="add__label" for="milk">Молоко</label>
           </li>
           <li class="add__item">
-            <input type="checkbox" class="add__input" name="Vitamins" id="Vitamins">
-            <label class="add__label" for="Vitamins">Витамины</label>
+            <input type="checkbox" class="add__input" name="vitamins" id="vitamins">
+            <label class="add__label" for="vitamins">Витамины</label>
           </li>
         </ul>
         <button class="profile__submit" type="submit">Отправить заявку</button>
@@ -96,9 +94,9 @@
   <footer class="footer">
     <div class="footer-wrap">
       <p class="footer__invite">приглашаем к сотрудничеству дилеров!</p>
-      <p class="footer__adress" aria-label="Наш адрес">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="footer__address" aria-label="Наш адрес">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <img class="footer__image-adress" src="" width="" height=""
+    <img class="footer__image-map" src="" width="" height=""
       alt="Наш адрес:ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     <img class="footer__image-logo" src="" width="" height="" alt="Логотип Cat Energy">
     <ul class="footer__list social-list">
@@ -114,7 +112,7 @@
     </ul>
     <div class="footer__container html">
       <a class="html__link" class="" href=""><img class="html__image" src="" width="" height=""
-          alt="Ссылка хтмл академия">HTML Academy</a>
+          alt="Ссылка Академия HTML">HTML Academy</a>
     </div>
   </footer>
 </body>
