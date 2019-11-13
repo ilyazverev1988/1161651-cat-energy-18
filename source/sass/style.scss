@@ -1,0 +1,37 @@
+@import "../sass/variables.scss";
+@import "../sass/blocks/body.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/description.scss";
+@import "../sass/blocks/selection.scss";
+@import "../sass/blocks/explanation.scss";
+@import "../sass/blocks/example.scss";
+@import "../sass/blocks/footer.scss";
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
