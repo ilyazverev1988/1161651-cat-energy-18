@@ -17,15 +17,19 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
   &--nutrients::before {
     content: "";
   }
+
   &--powder::before {
     content: "";
   }
+
   &--cutlery::before {
     content: "";
   }
+
   &--time::before {
     content: "";
   }
