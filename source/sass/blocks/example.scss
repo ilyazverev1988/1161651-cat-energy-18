@@ -2,12 +2,19 @@
   background-color: #f2f2f2;
 }
 
+.example__wrap {
+  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+
 .example__header {
   color: #111111;
-  font-family: $Oswald-Regular;
+  font-family: $Oswald;
+  font-weight: normal;
   font-size: 36px;
-  font-weight: 400;
   line-height: 60px;
+  margin-bottom: 33px;
 }
 
 .example__text {
@@ -22,46 +29,71 @@
   list-style-type: none;
 }
 
-.number-list__item {
-  border-radius: 3px;
-  border: 1px solid #cdcdcd;
-  width: 124px;
-  height: 56px;
-}
-
-.number-list__figures {
-  color: #111111;
-  font-family: $Oswald-Regular;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.number-list__describe {
-  color: #444444;
-  font-family: $Arial;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-  margin: 0;
-}
-
 .example__spending {
   color: #111111;
-  font-family: $Oswald-Regular;
+  font-family: $Oswald;
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.slaider__time {
-  color: #111111;
-  font-family: $Oswald-Regular;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
+.example__wrap-image {
+  display: flex;
+  justify-content: center;
+}
+
+.example__conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: white;
+  }
+
+  .example__wrap {
+    padding: 0 30px;
+    width: 768px;
+  }
+
+  .example__wrap-center {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__wrap-image,
+  .example__conteiner {
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+
+  .example__conteiner {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrap {
+    padding-left: 110px;
+    width: 1440px;
+    display: flex;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+  }
+
+  .example__wrap-center {
+    flex-wrap: wrap;
+  }
+
+  .example__container {
+    display: flex;
+    flex-direction: column;
+  }
 }

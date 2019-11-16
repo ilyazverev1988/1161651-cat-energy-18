@@ -1,0 +1,74 @@
+.profile {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.profile__title-section {
+  color: #111111;
+  font-family: $Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.profile__write {
+  color: #111111;
+  font-family: $Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.profile__wrap,
+.profile__radio,
+.profile_about,
+.profile__checkbox {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile__contact {
+  color: #111111;
+  font-family: $Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.profile__wrap-submit,
+.profile__wrap-necessarily {
+  display: flex;
+  justify-content: center;
+}
+
+.profile__submit {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: $Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: relative;
+
+  &--green::before {
+    width: 280px;
+    height: 40px;
+    background-color: #68b738;
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -66px;
+    z-index: -1;
+  }
+}
+
+.profile__text {
+  color: #444444;
+  font-family: $Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
