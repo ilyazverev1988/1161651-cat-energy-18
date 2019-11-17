@@ -5,6 +5,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .contact__input {
@@ -14,4 +15,17 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.contact__item {
+  display: flex;
+}
+
+@media (min-width: $desktop-width) {
+  .contact__item {
+    width: 570px;
+    margin-right: 78px;
+  }
 }

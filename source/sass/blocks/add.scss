@@ -6,3 +6,22 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .add {
+    display: flex;
+    padding-left: 80px;
+    flex-wrap: wrap;
+  }
+
+  .add__item {
+    margin-right: 125px;
+    width: 219px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add {
+    flex-wrap: nowrap;
+  }
+}

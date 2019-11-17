@@ -72,3 +72,37 @@
   font-weight: 400;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .profile {
+    width: 768px;
+  }
+
+  .profile__wrap-tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    width: 1440px;
+  }
+
+  .profile__write {
+    width: 322px;
+  }
+
+  .profile__wrap-desktop {
+    display: flex;
+  }
+
+  .profile__wrap {
+    width: 570px;
+    margin-right: 108px;
+  }
+
+  .profile_about {
+    display: flex;
+  }
+}

@@ -5,6 +5,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .animal__input {
@@ -14,4 +15,11 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.animal__item {
+  display: flex;
+  align-items: center;
 }

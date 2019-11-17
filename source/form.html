@@ -36,29 +36,31 @@
       <h1 class="profile__title-section">Подбор программы</h1>
       <p class="profile__write">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="profile__wrap animal">
-          <li class="animal__item"><label class="animal__label" for="name">Имя:*</label>
-            <input class="animal__input" type="text" name="name" id="name" placeholder="Барсик">
-          </li>
-          <li class="animal__item"><label class="animal__label" for="weight">Вес (кг):*</label>
-            <input class="animal__input" type="text" name="weight" id="weight" placeholder="7">
-          </li>
-          <li class="animal__item"><label class="animal__label" for="age">Возраст (лет):</label>
-            <input class="animal__input" type="text" name="age" id="age" placeholder="7"></li>
-        </ul>
-        <ul class="profile__radio select">
-          <li class="select__item"><input class="select__radio select__radio--cheched" type="radio" name="program"
-              value="Похудение" id="losing" checked>
-            <label class="select__label" for="losing">Похудение</label>
-          </li>
-          <li class="select__item"><input class="select__radio" type="radio" name="program" value="Набор массы"
-              id="mass">
-            <label class="select__label" for="mass">Набор массы</label>
-          </li>
-          <li class="select__item"><input class="select__radio" type="radio" name="program" value="Не знаю" id="not">
-            <label class="select__label" for="not">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
+        <div class="profile__wrap-desktop">
+          <ul class="profile__wrap animal">
+            <li class="animal__item"><label class="animal__label" for="name">Имя:*</label>
+              <input class="animal__input" type="text" name="name" id="name" placeholder="Барсик">
+            </li>
+            <li class="animal__item"><label class="animal__label" for="weight">Вес (кг):*</label>
+              <input class="animal__input" type="text" name="weight" id="weight" placeholder="7">
+            </li>
+            <li class="animal__item"><label class="animal__label" for="age">Возраст (лет):</label>
+              <input class="animal__input" type="text" name="age" id="age" placeholder="7"></li>
+          </ul>
+          <ul class="profile__radio select">
+            <li class="select__item"><input class="select__radio select__radio--cheched" type="radio" name="program"
+                value="Похудение" id="losing" checked>
+              <label class="select__label" for="losing">Похудение</label>
+            </li>
+            <li class="select__item"><input class="select__radio" type="radio" name="program" value="Набор массы"
+                id="mass">
+              <label class="select__label" for="mass">Набор массы</label>
+            </li>
+            <li class="select__item"><input class="select__radio" type="radio" name="program" value="Не знаю" id="not">
+              <label class="select__label" for="not">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
         <h3 class="profile__contact profile__contact--strip">Контактные данные (владельца кота)</h3>
         <ul class="profile_about contact">
           <li class="contact__item"><label class="contact__label" for="email">E-mail:*</label>
@@ -72,9 +74,8 @@
         </ul>
         <h3 class="profile__contact profile__contact--strip">Комментарий</h3>
         <div class="profile__comment habits">
-          <label class="habits__label">
-            <textarea name="habits__letter" id="letter" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </label>
+          <textarea class="habits__letter" name="habits__letter" id="letter"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <h3 class="profile__contact profile__contact--strip">Дополнительно</h3>
         <ul class="profile__checkbox add">
@@ -95,13 +96,15 @@
             <label class="add__label" for="vitamins">Витамины</label>
           </li>
         </ul>
-        <div class="profile__wrap-submit">
-          <button class="profile__submit profile__submit--green" type="submit">Отправить заявку</button>
+        <div class="profile__wrap-tablet">
+          <div class="profile__wrap-submit">
+            <button class="profile__submit profile__submit--green" type="submit">Отправить заявку</button>
+          </div>
+          <div class="profile__wrap-necessarily">
+            <p class="profile__text">* — Обязательные поля</p>
+          </div>
         </div>
       </form>
-      <div class="profile__wrap-necessarily">
-        <p class="profile__text">* — Обязательные поля</p>
-      </div>
     </section>
   </main>
   <footer class="footer">
