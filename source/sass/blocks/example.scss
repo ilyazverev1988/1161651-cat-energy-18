@@ -8,9 +8,14 @@
   margin: 0 auto;
 }
 
+.example__wrap-image {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
 .example__header {
   color: #111111;
-  font-family: $Oswald;
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
@@ -31,17 +36,11 @@
 
 .example__spending {
   color: #111111;
-  font-family: $Oswald;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.example__wrap-image {
-  display: flex;
-  justify-content: center;
 }
 
 .example__conteiner {
