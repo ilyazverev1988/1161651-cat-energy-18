@@ -1,0 +1,44 @@
+.header {
+  min-height: 65px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.header__list {
+  list-style-type: none;
+  margin: 11px 20px 15px 20px;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__list {
+    display: flex;
+  }
+
+  .header {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    margin-left: 250px;
+  }
+
+  .header {
+    width: 1440px;
+  }
+}

@@ -1,0 +1,25 @@
+.selection {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.selection__wrap {
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .selection {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection {
+    width: 1440px;
+    padding-left: 113px;
+  }
+}

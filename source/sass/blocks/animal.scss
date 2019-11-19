@@ -1,0 +1,23 @@
+.animal__label {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.animal__input {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.animal__item {
+  display: flex;
+  align-items: center;
+}

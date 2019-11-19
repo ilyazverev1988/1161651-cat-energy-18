@@ -1,0 +1,29 @@
+.catalog {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.catalog_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1440px;
+  }
+}

@@ -1,0 +1,70 @@
+.detail-list__item {
+  color: #444444;
+  font-family: $Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 20px;
+
+  &--nutrients::before {
+    content: "";
+  }
+
+  &--powder::before {
+    content: "";
+  }
+
+  &--cutlery::before {
+    content: "";
+  }
+
+  &--time::before {
+    content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .detail-list__item {
+    width: 240px;
+    margin-right: 144px;
+
+    &--number-1::before {
+      content: "";
+    }
+
+    &--number-2::before {
+      content: "";
+    }
+
+    &--number-3::before {
+      content: "";
+    }
+
+    &--number-4::before {
+      content: "";
+    }
+
+    &--nutrients::before {
+      content: "";
+    }
+
+    &--powder::before {
+      content: "";
+    }
+
+    &--cutlery::before {
+      content: "";
+    }
+
+    &--time::before {
+      content: "";
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .detail-list__item {
+    width: 240px;
+    margin-right: 89px;
+  }
+}

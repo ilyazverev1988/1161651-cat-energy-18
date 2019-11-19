@@ -1,0 +1,96 @@
+.food-list__wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.food-list__wrap-order {
+  display: flex;
+  justify-content: center;
+}
+
+.food-list__order {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+
+  &--green::before {
+    content: "";
+    width: 280px;
+    height: 40px;
+    background-color: #68b738;
+    position: absolute;
+    top: -6px;
+    left: -109px;
+    z-index: -1;
+  }
+}
+
+.food-list__order-show {
+  display: flex;
+  justify-content: center;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+
+  &--gray::before {
+    content: "";
+    width: 280px;
+    height: 40px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: -6px;
+    left: -109px;
+    z-index: -1;
+  }
+}
+
+.food-list__wrap-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .food-list__item {
+    width: 324px;
+    min-height: 431px;
+    background-color: #f2f2f2;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    z-index: -2;
+
+    &--show {
+      background-color: white;
+    }
+  }
+
+  .food-list__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .food-list__item {
+    width: 245px;
+    min-height: 431px;
+    margin-right: 80px;
+    margin-bottom: 35px;
+  }
+}

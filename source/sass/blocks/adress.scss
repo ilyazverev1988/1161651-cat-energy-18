@@ -1,0 +1,48 @@
+.adress {
+  width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.adress__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adress__invite {
+  color: #111111;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.adress__address {
+  color: #444444;
+  font-family: $Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .adress {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .adress {
+    width: 1440px;
+  }
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 570px;
+    min-height: 201px;
+  }
+}

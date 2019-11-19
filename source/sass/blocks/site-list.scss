@@ -1,0 +1,19 @@
+.site-list__item {
+  color: #111111;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    margin-right: 35px;
+  }
+}
