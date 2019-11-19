@@ -1,9 +1,9 @@
-.description {
+.promo {
   width: 320px;
   margin: 0 auto;
 }
 
-.description__food {
+.promo__food {
   color: black;
   font-weight: normal;
   font-size: 36px;
@@ -12,7 +12,7 @@
   margin: 29px 0 0 0;
 }
 
-.description__slogan {
+.promo__slogan {
   color: black;
   font-weight: normal;
   font-size: 14px;
@@ -21,13 +21,13 @@
   margin: 19px 0 0 0;
 }
 
-.description-wrap {
+.promo-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.description__program {
+.promo__program {
   color: #ffffff;
   font-weight: normal;
   font-size: 14px;
@@ -52,16 +52,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .description-wrap {
+  .promo-wrap {
     padding-left: 120px;
     align-items: flex-start;
   }
 
-  .description {
+  .promo {
     width: 768px;
   }
 
-  .description__program {
+  .promo__program {
     padding-left: 40px;
 
     &--green::before {
@@ -69,21 +69,21 @@
     }
   }
 
-  .description__food-image {
+  .promo__food-image {
     align-self: center;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .description-wrap {
+  .promo-wrap {
     position: relative;
   }
 
-  .description {
+  .promo {
     width: 1440px;
   }
 
-  .description__food-image {
+  .promo__food-image {
     position: absolute;
     left: 748px;
     top: 70px;

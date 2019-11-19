@@ -45,4 +45,12 @@
     align-items: center;
     justify-content: space-around;
   }
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 570px;
+    min-height: 201px;
+  }
 }

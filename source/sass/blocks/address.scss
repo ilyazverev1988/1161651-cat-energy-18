@@ -1,4 +1,4 @@
-.adress {
+.address {
   width: 320px;
   margin: auto;
   display: flex;
@@ -6,12 +6,12 @@
   text-align: center;
 }
 
-.adress__container {
+.address__container {
   display: flex;
   justify-content: space-between;
 }
 
-.adress__invite {
+.address__invite {
   color: #111111;
   font-weight: normal;
   font-size: 16px;
@@ -19,30 +19,22 @@
   text-transform: uppercase;
 }
 
-.adress__address {
+.address__address {
   color: #444444;
-  font-family: $Arial;
+  font-family: $minor-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .adress {
+  .address {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .adress {
+  .address {
     width: 1440px;
-  }
-
-  .footer__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 570px;
-    min-height: 201px;
   }
 }
