@@ -14,3 +14,12 @@
 .body {
   font-family: $main-font;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
