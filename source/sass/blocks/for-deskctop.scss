@@ -1,0 +1,12 @@
+@media (min-width: $desktop-width) {
+  .for-deskctop {
+    background-color: #eaeaea;
+  }
+
+  .for-deskctop__wrap {
+    background-color: #f2f2f2;
+    display: flex;
+    width: 1300px;
+    margin: 217px auto 0 auto;
+  }
+}

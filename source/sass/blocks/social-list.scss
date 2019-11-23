@@ -1,4 +1,4 @@
-.social-list {
-  display: flex;
-  padding: 20px 20px;
+.social-list__item:nth-child(2n) {
+  margin-left: 37px;
+  margin-right: 40px;
 }

@@ -1,7 +1,6 @@
 .explanation {
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
 }
 
 .explanation_detail {
@@ -9,19 +8,26 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
-  margin: 32px 20px 0 0;
+  margin: 0 0 0 20px;
 }
 
 .explanation__list {
   list-style-type: none;
   padding: 0;
-  margin-top: 35px;
+  margin: 35px 20px 0 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .explanation_detail {
+    font-size: 60px;
+    margin: 51px 0 0 33px;
+  }
+
   .explanation__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 35px 0 0 30px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .explanation {
@@ -31,7 +37,15 @@
 
 @media (min-width: $desktop-width) {
   .explanation {
-    width: 1440px;
-    padding-left: 113px;
+    width: 1300px;
+  }
+
+  .explanation_detail {
+    margin: 79px 0 0 40px;
+  }
+
+  .explanation__list {
+    margin: 63px 40px 0 40px;
+    border-bottom: none;
   }
 }

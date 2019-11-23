@@ -1,3 +1,13 @@
 .author__link {
   text-decoration: none;
 }
+
+.author__image {
+  fill: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .author__link:nth-child(2n + 1) {
+    margin-right: 23px;
+  }
+}

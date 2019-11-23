@@ -4,27 +4,44 @@
 }
 
 .promo__food {
-  color: black;
+  color: #ffffff;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 29px 0 0 0;
+  margin: 0;
+  position: relative;
+
+  &--background-cat::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 305px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    z-index: -2;
+  }
 }
 
 .promo__slogan {
-  color: black;
+  color: #ffffff;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 19px 0 0 0;
+  margin: 19px 0 29px 0;
 }
 
 .promo-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.promo__wrap-tablet {
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__program {
@@ -35,7 +52,7 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  margin-top: 14px;
+  margin: 17px 0 33px 0;
   position: relative;
   text-decoration: none;
 
@@ -45,32 +62,63 @@
     width: 280px;
     height: 40px;
     background-color: #68b738;
-    left: -83px;
+    left: 0;
     top: -9px;
     z-index: -1;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .promo__food {
+    width: 410px;
+    color: #111111;
+    font-size: 59px;
+    line-height: 60px;
+    text-transform: none;
+    text-align: left;
+
+    &--background-cat::before {
+      display: none;
+    }
+  }
+
+  .promo__slogan {
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 33px 0 0 0;
+  }
+
   .promo-wrap {
-    padding-left: 120px;
     align-items: flex-start;
   }
 
   .promo {
+    padding-left: 120px;
     width: 768px;
   }
 
   .promo__program {
-    padding-left: 40px;
+    padding-left: 26px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 65px 0 0 0;
 
     &--green::before {
-      left: -2px;
+      width: 245px;
+      height: 52px;
+      top: -13px;
     }
   }
 
   .promo__food-image {
     align-self: center;
+    order: 2;
+  }
+
+  .promo__wrap-tablet {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -80,12 +128,22 @@
   }
 
   .promo {
-    width: 1440px;
+    width: 1300px;
+  }
+
+  .promo__food--background-cat::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -125px;
+    left: 546px;
+    width: 720px;
+    height: 696px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    z-index: -2;
   }
 
   .promo__food-image {
-    position: absolute;
-    left: 748px;
-    top: 70px;
+    margin-left: 154px;
   }
 }

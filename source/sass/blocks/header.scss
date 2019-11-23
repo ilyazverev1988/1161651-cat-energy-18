@@ -1,23 +1,93 @@
 .header {
-  min-height: 65px;
   width: 320px;
   margin: 0 auto;
 }
 
 .header__list {
   list-style-type: none;
-  margin: 11px 20px 15px 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .header__wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px 15px 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.header__nav--closed .header__menu {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 18px;
+    background-image: url("../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.header__nav--opened .header__menu {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header__nav--closed .site-list__item {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  .header__nav--closed .site-list__item--active {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .header__nav--nojs .header__menu {
+    display: none;
+  }
+
+  .header__nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .header__nav {
     display: flex;
     align-items: center;
+    margin: 24px 31px 61px 29px;
   }
 
   .header__menu {
@@ -28,17 +98,34 @@
     display: flex;
   }
 
+  .header__wrapper {
+    margin-left: 96px;
+  }
+
   .header {
     width: 768px;
+  }
+
+  .header__wrap {
+    padding: 0;
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .header__nav {
+    margin: 54px 40px 29px 40px;
+  }
+
+  .header__list {
+    display: flex;
+  }
+
   .header__wrapper {
-    margin-left: 250px;
+    margin-left: 540px;
   }
 
   .header {
-    width: 1440px;
+    width: 1300px;
   }
 }

@@ -1,7 +1,11 @@
 .selection {
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
+}
+
+.selection__list {
+  margin: 0;
+  padding: 0 20px;
 }
 
 .selection__wrap {
@@ -18,8 +22,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .selection__list {
+    display: flex;
+    margin: 190px 40px 0 40px;
+    padding: 0;
+  }
+
   .selection {
-    width: 1440px;
-    padding-left: 113px;
+    width: 1300px;
   }
 }

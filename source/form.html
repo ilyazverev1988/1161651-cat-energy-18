@@ -10,23 +10,23 @@
 
 <body class="body">
   <header class="header">
-    <nav class="header__nav">
-      <div class="header_wrap">
+    <nav class="header__nav header__nav--closed header__nav--nojs">
+      <div class="header__wrap">
         <a class="header__logo">
-          <img class="header__logo-image" src="" width="" height="" alt="Cat energy">
+          <img class="header__logo-image" src="/img/logo-mobile.svg" width="191" height="38" alt="Cat energy">
         </a>
         <button class="header__menu header__menu--active"></button>
       </div>
       <div class="header__wrapper">
         <ul class="header__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__menu site-list__menu--black" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__menu site-list__menu--black" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item  site-list__item--active">
-            <a href="">Подбор программы</a>
+          <li class="site-list__item site-list__item--active site-list__item--black">
+            <a class="site-list__menu site-list__menu--black">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -114,34 +114,45 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
-      <img class="address__image-map" src="" width="" height=""
-        alt="Наш адрес:ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <div class="adress__wrap-map">
+        <iframe class="adress__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574456301012!5m2!1sru!2sru"
+          width=auto height="400" allowfullscreen=""></iframe>
+      </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrap">
       <div class="footer__tablet-wrap">
-        <img class="footer__image-logo" src="" width="" height="" alt="Логотип Cat Energy">
+        <div class="footer__wrap-image">
+          <img class="footer__image-logo" src="/img/logo-footer.svg" width="128px" height="24px"
+            alt="Логотип Cat Energy">
+        </div>
         <div class="footer__desktop-wrap">
           <ul class="footer__list social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href=""><img src="" width="" height="" alt="Ссылка в контакте"></a>
+              <a class="social-list__link" href=""><img src="/img/icon-vk.svg" width="22px" height="12px"
+                  alt="Ссылка в контакте"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href=""><img src="" width="" height="" alt="Ссылка в инстаграм"></a>
+              <a class="social-list__link" href=""><img src="/img/icon-insta.svg" width="16px" height="16px"
+                  alt="Ссылка в инстаграм"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href=""><img src="" width="" height="" alt="Ссылка в фейсбук"></a>
+              <a class="social-list__link" href=""><img src="/img/icon-fb.svg" width="10px" height="19px"
+                  alt="Ссылка в фейсбук"></a>
             </li>
           </ul>
         </div>
         <div class="footer__container author">
-          <a class="author__link" href=""><img class="author__image" src="" width="" height="" alt="Академия HTML"></a>
           <a class="author__link" href="">HTML Academy</a>
+          <a class="author__link" href=""><img class="author__image" src="/img/htmlacademy.svg" width="27px"
+              height="34px" alt="Академия HTML"></a>
         </div>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

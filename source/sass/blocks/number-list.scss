@@ -1,15 +1,15 @@
-.number-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-}
-
 .number-list__item {
   border-radius: 3px;
   border: 1px solid #cdcdcd;
   width: 124px;
   height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-list__item:nth-child(1) {
+  margin-right: 32px;
 }
 
 .number-list__figures {
@@ -19,6 +19,7 @@
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 17px;
 }
 
 .number-list__describe {
@@ -28,4 +29,40 @@
   font-weight: 400;
   line-height: 12px;
   margin: 0;
+  padding: 5px 17px 0 16px;
+  z-index: 2;
+  width: 57px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .number-list__item {
+    width: 162px;
+    height: 72px;
+  }
+
+  .number-list__item:nth-child(1) {
+    margin-right: 42px;
+  }
+
+  .number-list__figures {
+    font-size: 30px;
+    line-height: 37.02px;
+  }
+
+  .number-list__describe {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: white;
+    width: auto;
+    white-space: nowrap;
+    padding: 12px 9px 0 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .number-list__describe {
+    background-color: #f2f2f2;
+  }
 }
