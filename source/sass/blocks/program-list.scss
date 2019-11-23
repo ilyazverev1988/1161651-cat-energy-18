@@ -27,7 +27,7 @@
     height: 49px;
     top: 26px;
     left: 17px;
-    background-image: url("/img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   &--icon-fat::after {
@@ -37,7 +37,7 @@
     height: 28px;
     top: 37px;
     left: 0;
-    background-image: url("/img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
   }
 
   &::before {
@@ -81,7 +81,7 @@
     left: 105px;
     width: 24px;
     height: 11px;
-    background-image: url("/img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
   }
 }
 
@@ -105,7 +105,7 @@
       height: 194px;
       top: 86px;
       left: 507px;
-      background-image: url("/img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
     }
 
     &--icon-fat::after {
@@ -113,7 +113,7 @@
       height: 112px;
       top: 127px;
       left: 440px;
-      background-image: url("/img/icon-cat-pro.svg");
+      background-image: url("../img/icon-cat-pro.svg");
     }
   }
 
@@ -172,7 +172,7 @@
       height: 97px;
       top: 45px;
       left: 73px;
-      background-image: url("/img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
     }
 
     &--icon-fat::after {
@@ -180,7 +180,7 @@
       height: 56px;
       top: 71px;
       left: 37px;
-      background-image: url("/img/icon-cat-pro.svg");
+      background-image: url("../img/icon-cat-pro.svg");
     }
   }
 
