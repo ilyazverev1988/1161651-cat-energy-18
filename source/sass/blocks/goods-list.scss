@@ -72,6 +72,32 @@
 
   .goods-list__item {
     min-height: 140px;
+    border: 1px solid rgba(#cdcdcd, 0.5);
+  }
+
+  .goods-list__desktop-wrap {
+    margin: 27px 39px 0 39px;
+  }
+
+  .goods-list__wrap {
+    margin: 0;
+  }
+
+  .goods-list__title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .goods-list__wrap-center {
+    margin-top: 36px;
+  }
+
+  .goods-list__text {
+    font-size: 16px;
+  }
+
+  .goods-list__text + .goods-list__text--margin {
+    margin-left: 52px;
   }
 }
 
@@ -79,17 +105,52 @@
   .goods-list__desktop-wrap {
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    width: 895px;
+    margin: 27px 0 0 0;
+  }
+
+  .goods-list__item {
+    min-height: 71px;
+    border-left: none;
+    border-right: none;
+  }
+
+  /*.goods-list__item:nth-child(2n + 1) {
+    border-top: 1px solid#d2d2d2;
+  }*/
+
+  .goods-list__wrap-center {
+    margin: 0;
+    margin-right: 65px;
+  }
+
+  .goods-list__title {
+    line-height: 20px;
+  }
+
+  .goods-list__text {
+    line-height: 20px;
+  }
+
+  .goods-list__table-wrap {
+    width: 610px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .goods-list__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 289px;
+  }
+
+  .goods-list__text + .goods-list__text--margin {
+    margin-left: 113px;
   }
 
   .goods-list__order--green::before {
     width: 245px;
-    min-height: 40px;
     top: -6px;
     left: -94px;
-  }
-
-  .goods-list__table-wrap {
-    justify-content: flex-start;
   }
 }
