@@ -1,5 +1,4 @@
 .promo {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -95,7 +94,6 @@
 
   .promo {
     padding-left: 120px;
-    width: 768px;
   }
 
   .promo__program {
@@ -127,17 +125,13 @@
     position: relative;
   }
 
-  .promo {
-    width: 1300px;
-  }
-
   .promo__food--background-cat::before {
     display: block;
     position: absolute;
     content: "";
     top: -125px;
     left: 546px;
-    width: 720px;
+    width: 100vw;
     height: 696px;
     background-image: url("../img/index-background-mobile@1x.jpg");
     z-index: -2;

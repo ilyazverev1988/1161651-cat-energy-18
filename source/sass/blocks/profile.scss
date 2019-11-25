@@ -1,5 +1,4 @@
 .profile {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -8,6 +7,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
+  margin: 30px 0 35px 22px;
 }
 
 .profile__write {
@@ -16,6 +16,11 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0 74px 39px 20px;
+}
+
+.profile__wrap-padding {
+  padding: 0 20px;
 }
 
 .profile__wrap,
@@ -24,6 +29,16 @@
 .profile__checkbox {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+.profile__wrap,
+.profile__radio {
+  border-bottom: 1px solid #ededed;
+}
+
+.profile__radio {
+  margin-top: 29px;
 }
 
 .profile__contact {
@@ -31,12 +46,49 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  margin: 31px 119px 0 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
+    top: 13px;
+    left: 195px;
+  }
+
+  &--strip1::before {
+    width: 158px;
+    top: 13px;
+    left: 146px;
+  }
+
+  &--strip2::before {
+    width: 136px;
+    top: 13px;
+    left: 171px;
+  }
 }
 
 .profile__wrap-submit,
 .profile__wrap-necessarily {
   display: flex;
   justify-content: center;
+}
+
+.profile__checkbox {
+  margin: 11px 0 43px 20px;
+}
+
+.profile__comment {
+  margin: 31px 20px 31px 20px;
+}
+
+.profile__about {
+  margin: 30px 20px 31px 20px;
+  padding: 0;
 }
 
 .profile__submit {
@@ -67,38 +119,194 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+  margin: 34px 0 34px 0;
 }
 
 @media (min-width: $tablet-width) {
-  .profile {
-    width: 768px;
-  }
-
   .profile__wrap-tablet {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 82px 175px 87px 134px;
+  }
+
+  .profile__title-section {
+    font-size: 60px;
+    margin: 0 0 53px 32px;
+  }
+
+  .profile__write {
+    font-size: 20px;
+    margin: 53px 375px 69px 70px;
+    line-height: 30px;
+  }
+
+  .profile__wrap-padding {
+    padding: 0;
+    margin-left: 72px;
+    margin-right: 67px;
+
+    &--border {
+      border: 1px solid rgba(#cdcdcd, 0.5);
+      width: 630px;
+      min-height: 196px;
+    }
+  }
+
+  .profile__wrap,
+  .profile__radio {
+    border-bottom: none;
+  }
+
+  .profile__radio {
+    margin-top: 30px;
+  }
+
+  .profile__contact {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 79px 0 0 71px;
+
+    &::before {
+      width: 146px;
+      height: 3px;
+      top: 23px;
+      left: 525px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 146px;
+      height: 3px;
+      top: 20px;
+      right: 715px;
+      background-color: #68b738;
+    }
+  }
+
+  .profile__contact.profile__contact--strip1::before {
+    width: 500px;
+    top: 16px;
+    left: 221px;
+  }
+
+  .profile__contact.profile__contact--strip2::before {
+    width: 500px;
+    top: 16px;
+    left: 221px;
+  }
+
+  .profile__about {
+    margin: 70px 65px 0 72px;
+  }
+
+  .profile__comment {
+    margin: 71px 67px 0 70px;
+  }
+
+  .profile__checkbox {
+    margin: 64px 168px 0 70px;
+  }
+
+  .profile__text {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .profile__submit {
+    padding: 0;
+    font-size: 20px;
+
+    &--green::before {
+      width: 283px;
+      min-height: 52px;
+      top: -14px;
+      left: -39px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .profile {
-    width: 1300px;
-  }
-
   .profile__write {
     width: 322px;
+    margin: 53px 0 0 40px;
+  }
+
+  .profile__title-section {
+    margin: 0 0 0 40px;
   }
 
   .profile__wrap-desktop {
     display: flex;
+    margin: 69px 40px 0 40px;
   }
 
   .profile__wrap {
     width: 570px;
-    margin-right: 108px;
+    margin-right: 80px;
   }
 
   .profile__about {
     display: flex;
+    margin: 70px 40px 0 40px;
+  }
+
+  .profile__radio {
+    margin: 0;
+  }
+
+  .profile__wrap-padding--border {
+    margin: 0;
+    width: 570px;
+  }
+
+  .profile__wrap-padding {
+    margin: 0;
+  }
+
+  .profile__contact {
+    margin: 73px 0 0 40px;
+
+    &::before {
+      width: 750px;
+      top: 23px;
+      left: 525px;
+    }
+
+    &::after {
+      width: 146px;
+      top: 21px;
+      right: 1277px;
+    }
+  }
+
+  .profile__contact.profile__contact--strip1::before {
+    width: 1090px;
+    top: 21px;
+    left: 195px;
+  }
+
+  .profile__contact.profile__contact--strip2::before {
+    width: 1044px;
+    top: 21px;
+    left: 247px;
+  }
+
+  .profile__comment {
+    margin: 71px 40px 0 40px;
+  }
+
+  .profile__checkbox {
+    margin: 64px 140px 0 100px;
+  }
+
+  .profile__wrap-tablet {
+    margin: 85px 429px 97px 250px;
+  }
+
+  .profile__submit--green::before {
+    width: 568px;
+    top: -16px;
+    left: -175px;
   }
 }

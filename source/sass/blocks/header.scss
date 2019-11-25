@@ -1,5 +1,4 @@
 .header {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -102,10 +101,6 @@
     margin-left: 96px;
   }
 
-  .header {
-    width: 768px;
-  }
-
   .header__wrap {
     padding: 0;
     border-bottom: none;
@@ -123,9 +118,5 @@
 
   .header__wrapper {
     margin-left: 540px;
-  }
-
-  .header {
-    width: 1300px;
   }
 }

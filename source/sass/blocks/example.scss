@@ -3,7 +3,6 @@
 }
 
 .example__wrap {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -45,10 +44,6 @@
 @media (min-width: $tablet-width) {
   .example {
     background-color: white;
-  }
-
-  .example__wrap {
-    width: 768px;
   }
 
   .example__header {
@@ -94,7 +89,7 @@
     padding: 76px 0 0 0;
   }
 
-  .example__wrap {
+  .example__wrap.width {
     padding-left: 40px;
     width: 482px;
     display: flex;

@@ -6,7 +6,6 @@
 .address__container {
   display: flex;
   justify-content: space-between;
-  width: 320px;
   margin: auto;
   min-height: 114px;
 }
@@ -47,7 +46,6 @@
     min-height: 201px;
     align-items: center;
     justify-content: space-around;
-    width: 768px;
   }
 
   .address__invite {
@@ -67,7 +65,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .address__container {
+  .address__container.width {
     width: 570px;
     height: 201px;
     position: absolute;

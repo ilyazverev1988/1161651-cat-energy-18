@@ -1,5 +1,4 @@
 .explanation {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -29,17 +28,9 @@
     margin: 35px 0 0 30px;
     border-bottom: 1px solid #e6e6e6;
   }
-
-  .explanation {
-    width: 768px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .explanation {
-    width: 1300px;
-  }
-
   .explanation_detail {
     margin: 79px 0 0 40px;
   }

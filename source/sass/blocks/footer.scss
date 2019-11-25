@@ -12,7 +12,6 @@
   flex-direction: column;
   position: relative;
   background-color: #f2f2f2;
-  width: 320px;
   margin: auto;
   text-align: center;
   align-items: stretch;
@@ -51,10 +50,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer__wrap {
-    width: 768px;
-  }
-
   .footer__tablet-wrap {
     display: flex;
     background-color: #f2f2f2;
@@ -67,6 +62,7 @@
 
   .footer__desktop-wrap {
     margin: 0;
+    border: none;
   }
 
   .footer__container {
@@ -83,10 +79,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer__wrap {
-    width: 1300px;
-  }
-
   .footer__tablet-wrap {
     display: flex;
     align-items: center;

@@ -1,5 +1,4 @@
 .catalog {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -20,10 +19,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
-    width: 768px;
-  }
-
   .catalog__title {
     font-size: 60px;
     border-bottom: none;
@@ -39,10 +34,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
-    width: 1300px;
-  }
-
   .catalog__title {
     padding: 0 0 156px 40px;
   }

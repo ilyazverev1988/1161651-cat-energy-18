@@ -1,5 +1,4 @@
 .selection {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -15,20 +14,10 @@
   align-items: center;
 }
 
-@media (min-width: $tablet-width) {
-  .selection {
-    width: 768px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .selection__list {
     display: flex;
     margin: 190px 40px 0 40px;
     padding: 0;
-  }
-
-  .selection {
-    width: 1300px;
   }
 }

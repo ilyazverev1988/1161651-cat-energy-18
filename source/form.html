@@ -9,7 +9,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header width">
     <nav class="header__nav header__nav--closed header__nav--nojs">
       <div class="header__wrap">
         <a class="header__logo">
@@ -33,67 +33,73 @@
     </nav>
   </header>
   <main class="main">
-    <section class="profile">
+    <section class="profile width">
       <h1 class="profile__title-section">Подбор программы</h1>
       <p class="profile__write">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="profile__wrap-desktop">
           <ul class="profile__wrap animal">
-            <li class="animal__item"><label class="animal__label" for="name">Имя:*</label>
-              <input class="animal__input" type="text" name="name" id="name" placeholder="Барсик">
-            </li>
-            <li class="animal__item"><label class="animal__label" for="weight">Вес (кг):*</label>
-              <input class="animal__input" type="text" name="weight" id="weight" placeholder="7">
-            </li>
-            <li class="animal__item"><label class="animal__label" for="age">Возраст (лет):</label>
-              <input class="animal__input" type="text" name="age" id="age" placeholder="7"></li>
+            <div class="profile__wrap-padding">
+              <li class="animal__item"><label class="animal__label" for="name">Имя:*</label>
+                <input class="animal__input" type="text" name="name" id="name" placeholder="Барсик">
+              </li>
+              <li class="animal__item"><label class="animal__label" for="weight">Вес (кг):*</label>
+                <input class="animal__input" type="text" name="weight" id="weight" placeholder="7">
+              </li>
+              <li class="animal__item"><label class="animal__label" for="age">Возраст (лет):</label>
+                <input class="animal__input" type="text" name="age" id="age" placeholder="7"></li>
+            </div>
           </ul>
           <ul class="profile__radio select">
-            <li class="select__item"><input class="select__radio select__radio--cheched" type="radio" name="program"
-                value="Похудение" id="losing" checked>
-              <label class="select__label" for="losing">Похудение</label>
-            </li>
-            <li class="select__item"><input class="select__radio" type="radio" name="program" value="Набор массы"
-                id="mass">
-              <label class="select__label" for="mass">Набор массы</label>
-            </li>
-            <li class="select__item"><input class="select__radio" type="radio" name="program" value="Не знаю" id="not">
-              <label class="select__label" for="not">Не знаю (Нужен ваш совет)</label>
-            </li>
+            <div class="profile__wrap-padding profile__wrap-padding--border">
+              <li class="select__item"><input class="select__radio visually-hidden" type="radio" name="program"
+                  value="Похудение" id="losing" checked>
+                <label class="select__label" for="losing">Похудение</label>
+              </li>
+              <li class="select__item"><input class="select__radio visually-hidden" type="radio" name="program"
+                  value="Набор массы" id="mass">
+                <label class="select__label" for="mass">Набор массы</label>
+              </li>
+              <li class="select__item"><input class="select__radio visually-hidden" type="radio" name="program"
+                  value="Не знаю" id="not">
+                <label class="select__label" for="not">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </div>
           </ul>
         </div>
-        <h3 class="profile__contact profile__contact--strip">Контактные данные (владельца кота)</h3>
+        <h3 class="profile__contact">Контактные данные (владельца кота)</h3>
         <ul class="profile__about contact">
-          <li class="contact__item"><label class="contact__label" for="email">E-mail:*</label>
-            <input class="contact__input contact__input--icon-letter" type="text" name="email" id="email"
-              placeholder="kuklachev@gmail.com">
+          <li class="contact__item contact__item--icon-letter"><label class="contact__label"
+              for="email">E-mail:*</label>
+            <input class="contact__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
           </li>
-          <li class="contact__item"><label class="contact__label" for="telephone">Телефон:*</label>
-            <input class="contact__input contact__input--icon-telephone" type="text" name="telephone" id="telephone"
+          <li class="contact__item contact__item--icon-telephone"><label class="contact__label"
+              for="telephone">Телефон:*</label>
+            <input class="contact__input contact__input" type="text" name="telephone" id="telephone"
               placeholder="8 (960) 900-60-90">
           </li>
         </ul>
-        <h3 class="profile__contact profile__contact--strip">Комментарий</h3>
+        <h3 class="profile__contact profile__contact--strip1">Комментарий</h3>
         <div class="profile__comment habits">
           <textarea class="habits__letter" name="habits__letter" id="letter"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <h3 class="profile__contact profile__contact--strip">Дополнительно</h3>
+        <h3 class="profile__contact profile__contact--strip2">Дополнительно</h3>
         <ul class="profile__checkbox add">
           <li class="add__item">
-            <input class="add__input add__input--checked" type="checkbox" name="sweetener" id="sweetener" checked>
+            <input class="add__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="add__label" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="add__item">
-            <input class="add__input" type="checkbox" name="water" id="water">
+            <input class="add__input visually-hidden" type="checkbox" name="water" id="water">
             <label class="add__label" for="water">Питьевая вода</label>
           </li>
           <li class="add__item">
-            <input class="add__input" type="checkbox" name="milk" id="milk">
+            <input class="add__input visually-hidden" type="checkbox" name="milk" id="milk">
             <label class="add__label" for="milk">Молоко</label>
           </li>
           <li class="add__item">
-            <input type="checkbox" class="add__input" name="vitamins" id="vitamins">
+            <input class="add__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
             <label class="add__label" for="vitamins">Витамины</label>
           </li>
         </ul>
@@ -108,7 +114,7 @@
       </form>
     </section>
     <section class="address">
-      <div class="address__container">
+      <div class="address__container width">
         <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
         <p class="address__address" aria-label="Наш адрес">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -122,32 +128,31 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrap">
+    <div class="footer__wrap width">
       <div class="footer__tablet-wrap">
         <div class="footer__wrap-image">
-          <img class="footer__image-logo" src="img/logo-footer.svg" width="128px" height="24px"
-            alt="Логотип Cat Energy">
+          <img class="footer__image-logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
         </div>
         <div class="footer__desktop-wrap">
           <ul class="footer__list social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href=""><img src="img/icon-vk.svg" width="22px" height="12px"
+              <a class="social-list__link" href=""><img src="img/icon-vk.svg" width="22" height="12"
                   alt="Ссылка в контакте"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href=""><img src="img/icon-insta.svg" width="16px" height="16px"
+              <a class="social-list__link" href=""><img src="img/icon-insta.svg" width="16" height="16"
                   alt="Ссылка в инстаграм"></a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href=""><img src="img/icon-fb.svg" width="10px" height="19px"
+              <a class="social-list__link" href=""><img src="img/icon-fb.svg" width="10" height="19"
                   alt="Ссылка в фейсбук"></a>
             </li>
           </ul>
         </div>
         <div class="footer__container author">
           <a class="author__link" href="">HTML Academy</a>
-          <a class="author__link" href=""><img class="author__image" src="img/htmlacademy.svg" width="27px"
-              height="34px" alt="Академия HTML"></a>
+          <a class="author__link" href=""><img class="author__image" src="img/htmlacademy.svg" width="27" height="34"
+              alt="Академия HTML"></a>
         </div>
       </div>
     </div>

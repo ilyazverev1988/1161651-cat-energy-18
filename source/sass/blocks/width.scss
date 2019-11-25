@@ -1,0 +1,15 @@
+.width {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .width {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .width {
+    width: $desktop-width;
+  }
+}

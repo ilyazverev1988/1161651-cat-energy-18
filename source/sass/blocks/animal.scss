@@ -15,9 +15,36 @@
   text-transform: uppercase;
   width: 100%;
   margin-left: 16px;
+  min-height: 45px;
+  padding-left: 16px;
+  font-family: $main-font;
 }
 
 .animal__item {
   display: flex;
   align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin: 0;
+    padding-bottom: 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .animal__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .animal__input {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 52px;
+    padding-left: 20px;
+  }
+
+  .animal__item {
+    margin-bottom: 20px;
+  }
 }
