@@ -18,6 +18,21 @@
   min-height: 45px;
   padding-left: 16px;
   font-family: $main-font;
+  border: 1px solid rgba(#cdcdcd, 0.5);
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .animal__item {

@@ -12,6 +12,17 @@
   width: 100%;
   height: 150px;
   padding: 0;
+  border: 1px solid rgba(#cdcdcd, 0.5);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
 }
 
 @media (min-width: $tablet-width) {

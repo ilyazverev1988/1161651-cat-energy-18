@@ -56,6 +56,14 @@
     left: -108px;
     z-index: -1;
   }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+
+  &:hover::before {
+    background-color: #5eaa2f;
+  }
 }
 
 @media (min-width: $tablet-width) {

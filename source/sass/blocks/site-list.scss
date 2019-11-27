@@ -2,6 +2,19 @@
   text-align: center;
   padding: 24px 0;
   border-top: 1px solid #e6e6e6;
+
+  &--active {
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item:nth-child(1) {
@@ -15,6 +28,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

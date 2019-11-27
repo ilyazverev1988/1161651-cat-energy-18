@@ -12,7 +12,7 @@
   <header class="header width">
     <nav class="header__nav header__nav--closed header__nav--nojs">
       <div class="header__wrap">
-        <a class="header__logo">
+        <a class="header__logo" href="index.html">
           <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat energy">
         </a>
         <button class="header__menu header__menu--active"></button>
@@ -41,10 +41,10 @@
           <ul class="profile__wrap animal">
             <div class="profile__wrap-padding">
               <li class="animal__item"><label class="animal__label" for="name">Имя:*</label>
-                <input class="animal__input" type="text" name="name" id="name" placeholder="Барсик">
+                <input class="animal__input" type="text" name="name" id="name" placeholder="Барсик" required>
               </li>
               <li class="animal__item"><label class="animal__label" for="weight">Вес (кг):*</label>
-                <input class="animal__input" type="text" name="weight" id="weight" placeholder="7">
+                <input class="animal__input" type="text" name="weight" id="weight" placeholder="7" required>
               </li>
               <li class="animal__item"><label class="animal__label" for="age">Возраст (лет):</label>
                 <input class="animal__input" type="text" name="age" id="age" placeholder="7"></li>
@@ -69,22 +69,22 @@
         </div>
         <h3 class="profile__contact">Контактные данные (владельца кота)</h3>
         <ul class="profile__about contact">
-          <li class="contact__item contact__item--icon-letter"><label class="contact__label"
-              for="email">E-mail:*</label>
-            <input class="contact__input" type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
+          <li class="contact__item contact__item--icon-letter"><label class="contact__label" for="email"
+              required>E-mail:*</label>
+            <input class="contact__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
           </li>
           <li class="contact__item contact__item--icon-telephone"><label class="contact__label"
               for="telephone">Телефон:*</label>
-            <input class="contact__input contact__input" type="text" name="telephone" id="telephone"
-              placeholder="8 (960) 900-60-90">
+            <input class="contact__input contact__input" type="tel" name="telephone" id="telephone"
+              placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
           </li>
         </ul>
-        <h3 class="profile__contact profile__contact--strip1">Комментарий</h3>
+        <h3 class="profile__contact">Комментарий</h3>
         <div class="profile__comment habits">
           <textarea class="habits__letter" name="habits__letter" id="letter"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <h3 class="profile__contact profile__contact--strip2">Дополнительно</h3>
+        <h3 class="profile__contact">Дополнительно</h3>
         <ul class="profile__checkbox add">
           <li class="add__item">
             <input class="add__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -150,9 +150,9 @@
           </ul>
         </div>
         <div class="footer__container author">
-          <a class="author__link" href="">HTML Academy</a>
-          <a class="author__link" href=""><img class="author__image" src="img/htmlacademy.svg" width="27" height="34"
-              alt="Академия HTML"></a>
+          <a class="author__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="author__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="author__image"
+              src="img/htmlacademy.svg" width="27" height="34" alt="Академия HTML"></a>
         </div>
       </div>
     </div>

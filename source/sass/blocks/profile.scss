@@ -46,30 +46,12 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin: 31px 119px 0 20px;
+  margin: 31px 94px 0 20px;
   position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 99px;
-    height: 3px;
-    background-color: #68b738;
-    top: 13px;
-    left: 195px;
-  }
-
-  &--strip1::before {
-    width: 158px;
-    top: 13px;
-    left: 146px;
-  }
-
-  &--strip2::before {
-    width: 136px;
-    top: 13px;
-    left: 171px;
-  }
+  transform: translateY(50%);
+  display: inline-block;
+  background-color: white;
+  padding-right: 24px;
 }
 
 .profile__wrap-submit,
@@ -79,16 +61,21 @@
 }
 
 .profile__checkbox {
-  margin: 11px 0 43px 20px;
+  margin: 0 0 43px 20px;
+  padding-top: 11px;
+  border-top: 3px solid #68b738;
 }
 
 .profile__comment {
-  margin: 31px 20px 31px 20px;
+  margin: 0 20px 31px 20px;
+  padding-top: 31px;
+  border-top: 3px solid #68b738;
 }
 
 .profile__about {
-  margin: 30px 20px 31px 20px;
-  padding: 0;
+  margin: 0 20px 31px 20px;
+  padding-top: 56px;
+  border-top: 3px solid #68b738;
 }
 
 .profile__submit {
@@ -100,6 +87,16 @@
   line-height: 20px;
   text-transform: uppercase;
   position: relative;
+  cursor: pointer;
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+
+  &:hover::before {
+    background-color: #5eaa2f;
+    outline: none;
+  }
 
   &--green::before {
     width: 280px;
@@ -164,48 +161,26 @@
   .profile__contact {
     font-size: 36px;
     line-height: 36px;
-    margin: 79px 0 0 71px;
-
-    &::before {
-      width: 146px;
-      height: 3px;
-      top: 23px;
-      left: 525px;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 146px;
-      height: 3px;
-      top: 20px;
-      right: 715px;
-      background-color: #68b738;
-    }
-  }
-
-  .profile__contact.profile__contact--strip1::before {
-    width: 500px;
-    top: 16px;
-    left: 221px;
-  }
-
-  .profile__contact.profile__contact--strip2::before {
-    width: 500px;
-    top: 16px;
-    left: 221px;
+    margin: 79px 0 0 66px;
+    padding-left: 5px;
   }
 
   .profile__about {
-    margin: 70px 65px 0 72px;
+    margin: 0 65px 0 0;
+    padding-bottom: 0;
+    padding-left: 72px;
   }
 
   .profile__comment {
-    margin: 71px 67px 0 70px;
+    margin: 0 67px 0 60px;
+    padding-top: 71px;
+    padding-left: 10;
   }
 
   .profile__checkbox {
-    margin: 64px 168px 0 70px;
+    margin: 0 168px 0 60px;
+    padding-top: 64px;
+    padding-left: 10px;
   }
 
   .profile__text {
@@ -248,7 +223,9 @@
 
   .profile__about {
     display: flex;
-    margin: 70px 40px 0 40px;
+    margin: 0 40px 0 30px;
+    padding-top: 70px;
+    padding-left: 10px;
   }
 
   .profile__radio {
@@ -272,32 +249,18 @@
       top: 23px;
       left: 525px;
     }
-
-    &::after {
-      width: 146px;
-      top: 21px;
-      right: 1277px;
-    }
-  }
-
-  .profile__contact.profile__contact--strip1::before {
-    width: 1090px;
-    top: 21px;
-    left: 195px;
-  }
-
-  .profile__contact.profile__contact--strip2::before {
-    width: 1044px;
-    top: 21px;
-    left: 247px;
   }
 
   .profile__comment {
-    margin: 71px 40px 0 40px;
+    margin: 0 40px 0 30px;
+    padding-top: 71px;
+    padding-left: 10px;
   }
 
   .profile__checkbox {
-    margin: 64px 140px 0 100px;
+    margin: 0 140px 0 90px;
+    padding-top: 64px;
+    padding-left: 10px;
   }
 
   .profile__wrap-tablet {
