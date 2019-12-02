@@ -4,4 +4,54 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  position: relative;
+  padding-left: 46px;
+}
+
+.select__radio + .select__label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -3px;
+  left: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 15px;
+}
+
+.select__radio:checked + .select__label::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 5px;
+  left: 9px;
+  background-color: #68b738;
+  border-radius: 15px;
+}
+
+.select__item {
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .select__label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 88px;
+  }
+
+  .select__item {
+    margin-top: 36px;
+  }
+
+  .select__radio + .select__label::before {
+    top: -4px;
+    left: 29px;
+  }
+
+  .select__radio:checked + .select__label::after {
+    top: 5px;
+    left: 39px;
+  }
 }

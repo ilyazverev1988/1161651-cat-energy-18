@@ -3,15 +3,7 @@
 }
 
 .example__wrap {
-  padding: 0 20px;
-  width: 320px;
   margin: 0 auto;
-}
-
-.example__wrap-image {
-  background-color: white;
-  display: flex;
-  justify-content: center;
 }
 
 .example__header {
@@ -19,7 +11,8 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
-  margin-bottom: 33px;
+  margin: 0;
+  padding: 36px 0 0 20px;
 }
 
 .example__text {
@@ -27,11 +20,15 @@
   font-family: $minor-font;
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 19px;
+  padding: 23px 34px 0 20px;
+  margin: 0;
 }
 
 .example-list {
   list-style-type: none;
+  padding: 8px 20px 0 20px;
+  display: flex;
 }
 
 .example__spending {
@@ -41,11 +38,12 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin: 15px 0 0 0;
 }
 
-.example__conteiner {
+.example__wrap-spending {
   display: flex;
-  justify-content: center;
+  padding-left: 68px;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,44 +51,87 @@
     background-color: white;
   }
 
-  .example__wrap {
-    padding: 0 30px;
-    width: 768px;
+  .example__header {
+    margin: 2px 0 0 30px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 63px 63px 0 31px;
   }
 
   .example__wrap-center {
     display: flex;
     justify-content: space-between;
+    margin: 52px 31px 0 30px;
   }
 
-  .example__wrap-image,
-  .example__conteiner {
-    background-color: #f2f2f2;
-    width: 100%;
+  .example-list {
+    padding: 0;
+    margin: 0;
   }
 
-  .example__conteiner {
-    justify-content: space-around;
+  .example__spending {
+    margin: 0;
+    font-size: 20px;
+    width: 174px;
+    text-align: right;
+    margin-bottom: 8px;
+  }
+
+  .example__wrap-spending {
+    flex-direction: column;
+    margin-top: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .example__wrap {
-    padding-left: 110px;
-    width: 1440px;
+  .example__header {
+    top: -130px;
+    position: absolute;
+    margin: 0;
+  }
+
+  .example__text {
+    padding: 72px 0 0 0;
+  }
+
+  .example__wrap.width {
+    padding-left: 40px;
+    width: 482px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: #f2f2f2;
   }
 
   .example__wrapper {
     display: flex;
     flex-direction: column;
     width: 430px;
+    position: relative;
+    margin-left: -7px;
   }
 
   .example__wrap-center {
     flex-wrap: wrap;
+    margin: 67px 31px 0 0;
+  }
+
+  .example__spending {
+    white-space: nowrap;
+  }
+
+  .example__wrap-spending {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin-top: 62px;
+    margin-bottom: 75px;
+    flex-direction: row;
+    padding: 0;
   }
 
   .example__container {

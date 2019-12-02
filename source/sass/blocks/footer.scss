@@ -2,55 +2,105 @@
   background-color: #f2f2f2;
 }
 
+.footer__image-logo {
+  padding-top: 39px;
+  padding-bottom: 31px;
+}
+
 .footer__wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
   background-color: #f2f2f2;
-  width: 320px;
   margin: auto;
   text-align: center;
+  align-items: stretch;
+}
+
+.footer__wrap-image {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid rgba(#dadada, 0.9);
 }
 
 .footer__list {
   list-style-type: none;
   margin: 0;
-}
-
-.footer__container {
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
 
-@media (min-width: $tablet-width) {
-  .footer__wrap {
-    width: 768px;
-  }
+.footer__desktop-wrap {
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(#dadada, 0.9);
+  justify-content: center;
+}
 
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
   .footer__tablet-wrap {
     display: flex;
     background-color: #f2f2f2;
     align-items: center;
+    min-height: 151px;
+    justify-content: space-between;
+  }
+
+  .footer__desktop-wrap {
+    margin: 0;
+    border: none;
+  }
+
+  .footer__container {
+    margin-right: 28px;
+    margin-top: 8px;
+  }
+
+  .footer__wrap-image {
+    margin-top: -8px;
+    margin-left: 32px;
+  }
+
+  .footer__image-logo {
+    padding: 0;
+  }
+
+  .footer__list {
+    margin-left: 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer__wrap {
-    width: 1440px;
-  }
-
   .footer__tablet-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .footer__wrap-image {
+    margin-top: -20px;
+  }
+
+  .footer__desktop-wrap {
+    margin-top: -14px;
   }
 
   .footer__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 570px;
-    min-height: 201px;
+    margin-right: 49px;
+    margin-top: 3px;
   }
 }
