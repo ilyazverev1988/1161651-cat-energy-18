@@ -129,17 +129,17 @@
 
 @media (min-width: $tablet-width) {
   .product__item {
-    width: 324px;
+    width: 248px;
     min-height: 431px;
     background-color: #f2f2f2;
     margin: 140px 0 0 0;
     position: relative;
-    padding: 0;
+    padding: 0 37px 0 39px;
 
     &--show {
       background-color: white;
       border: 1px solid rgba(#cdcdcd, 0.5);
-      width: 322px;
+      width: 246px;
     }
   }
 
@@ -186,7 +186,7 @@
   }
 
   .product__list {
-    margin: 163px 37px 33px 39px;
+    margin: 163px 0 33px 0;
   }
 
   .product__description {
@@ -238,12 +238,12 @@
   }
 
   .product__item {
-    width: 245px;
+    width: 167px;
     min-height: 431px;
     margin-right: 79px;
 
     &--show {
-      width: 243px;
+      width: 167px;
     }
   }
 
@@ -253,8 +253,8 @@
   }
 
   .product__order {
-    margin: -11px 31px 0 31px;
-    padding: 13px 93px 8px 95px;
+    margin: -11px auto 0 auto;
+    padding: 13px 53px 8px 55px;
   }
 
   .product__wrap-field {
@@ -266,6 +266,7 @@
   }
 
   .product__order-show {
-    margin-top: -18px;
+    margin: -18px auto 0 auto;
+    padding: 13px 40px 12px 40px;
   }
 }

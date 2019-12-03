@@ -2,6 +2,23 @@
   background-color: #f2f2f2;
 }
 
+.footer__logo {
+  cursor: pointer;
+
+  &--active {
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__image-logo {
   padding-top: 39px;
   padding-bottom: 31px;
@@ -73,6 +90,7 @@
   .footer__wrap-image {
     margin-top: -8px;
     margin-left: 32px;
+    border-bottom: none;
   }
 
   .footer__image-logo {

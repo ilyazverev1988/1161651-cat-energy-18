@@ -24,8 +24,8 @@
   content: "";
   width: 12px;
   height: 12px;
-  top: 5px;
-  left: 9px;
+  top: 7px;
+  left: 10px;
   background-color: #68b738;
   border-radius: 15px;
 }
@@ -38,20 +38,26 @@
   .select__label {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 88px;
+    padding-left: 85px;
   }
 
   .select__item {
-    margin-top: 36px;
+    margin-top: 30px;
   }
 
   .select__radio + .select__label::before {
     top: -4px;
-    left: 29px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
   }
 
   .select__radio:checked + .select__label::after {
-    top: 5px;
-    left: 39px;
+    top: 7px;
+    left: 37px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
   }
 }

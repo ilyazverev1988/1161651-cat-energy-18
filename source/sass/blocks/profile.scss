@@ -16,7 +16,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 74px 37px 20px;
+  margin: 0 74px 39px 20px;
 }
 
 .profile__wrap-padding {
@@ -40,7 +40,7 @@
 .profile__radio {
   margin-top: 23px;
   padding-bottom: 6px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .profile__contact {
@@ -73,14 +73,15 @@
 }
 
 .profile__comment {
-  margin: -24px 57px 18px 19px;
-  padding-top: 31px;
+  margin: -17px 20px 0 19px;
+  padding-top: 24px;
+  padding-bottom: 18px;
   border-top: 3px solid #68b738;
 }
 
 .profile__about {
-  margin: -24px 20px 15px 19px;
-  padding-top: 60px;
+  margin: -20px 20px 18px 19px;
+  padding-top: 59px;
   padding-left: 0;
 }
 
@@ -122,29 +123,31 @@
   .profile__wrap-tablet {
     display: flex;
     justify-content: space-between;
-    margin: 82px 175px 87px 134px;
+    margin: 29px 175px 72px 68px;
+    align-items: center;
   }
 
   .profile__title-section {
     font-size: 60px;
-    margin: 0 0 53px 32px;
+    margin: 57px 0 55px 28px;
   }
 
   .profile__write {
     font-size: 20px;
-    margin: 53px 375px 69px 70px;
+    margin: 53px 375px 61px 70px;
     line-height: 30px;
   }
 
   .profile__wrap-padding {
     padding: 0;
-    margin-left: 72px;
+    margin-left: 71px;
     margin-right: 67px;
+    padding-top: 3px;
 
     &--border {
       border: 1px solid rgba(#cdcdcd, 0.5);
-      width: 630px;
-      min-height: 196px;
+      width: 627px;
+      min-height: 189px;
     }
   }
 
@@ -154,32 +157,39 @@
   }
 
   .profile__radio {
-    margin-top: 30px;
+    margin-top: 49px;
+    margin-bottom: -25px;
   }
 
   .profile__contact {
     font-size: 36px;
     line-height: 36px;
-    margin: 79px 0 0 66px;
-    padding-left: 5px;
+    margin: 79px 23px 0 28px;
+    padding-left: 38px;
+    padding-right: 45px;
   }
 
   .profile__about {
-    margin: 0 65px 0 0;
+    margin: 0;
     padding-bottom: 0;
-    padding-left: 72px;
+    padding-left: 70px;
+    border-top: 3px solid #68b738;
+    padding-right: 67px;
+    padding-top: 89px;
+    margin-top: 0;
+    margin-bottom: -51px;
   }
 
   .profile__comment {
-    margin: 0 67px 0 60px;
+    margin: 0 65px -47px 67px;
     padding-top: 71px;
     padding-left: 10;
   }
 
   .profile__checkbox {
-    margin: 0 168px 0 60px;
-    padding-top: 64px;
-    padding-left: 10px;
+    margin: 0;
+    padding-top: 63px;
+    padding-left: 65px;
   }
 
   .profile__text {

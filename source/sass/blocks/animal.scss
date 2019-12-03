@@ -19,6 +19,7 @@
   padding-left: 12px;
   font-family: $main-font;
   border: 1px solid rgba(#cdcdcd, 0.5);
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -38,7 +39,7 @@
 .animal__item {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 
   &:last-child {
     margin: 0;
@@ -56,7 +57,7 @@
     font-size: 20px;
     line-height: 20px;
     min-height: 52px;
-    padding-left: 20px;
+    padding-left: 16px;
   }
 
   .animal__item {

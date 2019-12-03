@@ -14,16 +14,17 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
-  margin-left: 16px;
+  margin-left: 11px;
   min-height: 45px;
-  padding-left: 9px;
+  padding-left: 14px;
   padding-right: 30px;
   font-family: $main-font;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  box-sizing: border-box;
+  outline: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid #cdcdcd;
-    outline: none;
   }
 
   &:focus {
@@ -38,7 +39,7 @@
 .contact__item {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   position: relative;
 
   &--comment {
@@ -50,7 +51,7 @@
     content: "";
     width: 17px;
     height: 13px;
-    top: 20px;
+    top: 16px;
     left: 249px;
     background-image: url("../img/icon-mail.svg");
   }
@@ -71,15 +72,25 @@
     font-size: 20px;
     line-height: 20px;
     min-height: 52px;
-    padding-left: 22px;
+    padding-left: 26px;
     padding-right: 30px;
     margin-bottom: 20px;
+  }
+
+  .contact__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contact__item {
+    align-items: baseline;
+    margin-bottom: -1px;
   }
 
   .contact__item--icon-letter::before,
   .contact__item--icon-telephone::before {
     left: 595px;
-    top: 23px;
+    top: 19px;
   }
 }
 
