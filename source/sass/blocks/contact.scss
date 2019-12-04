@@ -14,16 +14,112 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 100%;
-  margin-left: 16px;
+  margin-left: 11px;
+  min-height: 45px;
+  padding-left: 14px;
+  padding-right: 30px;
+  font-family: $main-font;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 2px solid #ff8282;
+  }
 }
 
 .contact__item {
   display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  position: relative;
+
+  &--comment {
+    margin-top: 5px;
+  }
+
+  &--icon-letter::before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 13px;
+    top: 16px;
+    left: 249px;
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  &--icon-telephone::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: 249px;
+    background-image: url("../img/icon-phone.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact__input {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 52px;
+    padding-left: 26px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .contact__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contact__item {
+    align-items: baseline;
+    margin-bottom: -1px;
+  }
+
+  .contact__item--icon-letter::before,
+  .contact__item--icon-telephone::before {
+    left: 595px;
+    top: 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contact__item {
     width: 570px;
     margin-right: 78px;
+    margin-bottom: 0;
+  }
+
+  .contact__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contact__input {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 52px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-left: 16px;
+    margin-bottom: 0;
+    width: 486px;
+  }
+
+  .contact__item--icon-letter::before,
+  .contact__item--icon-telephone::before {
+    left: 527px;
+    top: 21px;
   }
 }

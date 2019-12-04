@@ -15,9 +15,52 @@
   text-transform: uppercase;
   width: 100%;
   margin-left: 16px;
+  min-height: 45px;
+  padding-left: 12px;
+  font-family: $main-font;
+  border: 1px solid rgba(#cdcdcd, 0.5);
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .animal__item {
   display: flex;
   align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin: 0;
+    padding-bottom: 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .animal__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .animal__input {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 52px;
+    padding-left: 16px;
+  }
+
+  .animal__item {
+    margin-bottom: 20px;
+  }
 }

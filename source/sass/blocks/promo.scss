@@ -1,30 +1,67 @@
 .promo {
-  width: 320px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 198px;
+    right: 0;
+    width: 100%;
+    height: 305px;
+    background-color: #63a73a;
+    z-index: -3;
+  }
+}
+
+.promo__wrap-center {
   margin: 0 auto;
 }
 
 .promo__food {
-  color: black;
+  color: #ffffff;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 29px 0 0 0;
+  margin: 27px 0 0 0;
 }
 
 .promo__slogan {
-  color: black;
+  color: #ffffff;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 19px 0 0 0;
+  margin: 25px 0 29px 0;
 }
 
 .promo-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 305px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    z-index: -2;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
+  }
+}
+
+.promo__wrap-tablet {
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__program {
@@ -35,57 +72,138 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  margin-top: 14px;
+  margin: -3px 0 23px 0;
   position: relative;
   text-decoration: none;
+  background-color: #68b738;
+  padding: 12px 74px 12px 73px;
 
-  &--green::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 40px;
-    background-color: #68b738;
-    left: -83px;
-    top: -9px;
-    z-index: -1;
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
   }
 }
 
+.promo__wrap-picture {
+  width: 280px;
+}
+
 @media (min-width: $tablet-width) {
-  .promo-wrap {
-    padding-left: 120px;
-    align-items: flex-start;
+  .promo::before {
+    background-color: white;
   }
 
-  .promo {
-    width: 768px;
+  .promo__food {
+    width: 410px;
+    color: #111111;
+    font-size: 59px;
+    line-height: 60px;
+    text-transform: none;
+    text-align: left;
+    margin-top: 58px;
+  }
+
+  .promo__slogan {
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 40px 0 0 0;
+  }
+
+  .promo-wrap {
+    align-items: flex-start;
+    padding-left: 120px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .promo__program {
-    padding-left: 40px;
-
-    &--green::before {
-      left: -2px;
-    }
+    padding: 17px 29px 15px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 46px 0 0 0;
+    position: absolute;
   }
 
   .promo__food-image {
     align-self: center;
+    order: 2;
+    margin-top: 20px;
+    margin-left: -175px;
+  }
+
+  .promo__wrap-tablet {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .promo__wrap-picture {
+    width: 709px;
+    text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-wrap {
+    padding-left: 116px;
     position: relative;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: -118px;
+      left: 645px;
+      width: 720px;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      z-index: -2;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
   }
 
   .promo {
-    width: 1440px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -125px;
+      right: 0;
+      width: 50%;
+      height: 703px;
+      background-color: #63a73a;
+      z-index: -3;
+    }
   }
 
   .promo__food-image {
-    position: absolute;
-    left: 748px;
-    top: 70px;
+    margin-left: 370px;
+    margin-top: -259px;
+  }
+
+  .promo__wrap-picture {
+    width: 552px;
+  }
+
+  .promo__food {
+    margin-top: 107px;
+  }
+
+  .promo__slogan {
+    margin: 43px 0 0 -4px;
+  }
+
+  .promo__program {
+    margin: 52px 0 0 -6px;
   }
 }

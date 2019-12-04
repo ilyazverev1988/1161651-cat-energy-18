@@ -1,0 +1,12 @@
+@media (min-width: $desktop-width) {
+  .for-desktop {
+    background-image: linear-gradient(to right, #f2f2f2 60%, #eaeaea 60%);
+    z-index: 1;
+  }
+
+  .for-desktop__wrap {
+    display: flex;
+    width: 1300px;
+    margin: 118px auto 0 auto;
+  }
+}
