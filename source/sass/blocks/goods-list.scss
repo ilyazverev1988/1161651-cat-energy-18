@@ -5,6 +5,7 @@
   align-items: stretch;
   min-height: 128px;
   border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 17px;
 }
 
 .goods-list__wrap {
@@ -74,6 +75,11 @@
   .goods-list__item {
     min-height: 137px;
     border: 1px solid rgba(#cdcdcd, 0.5);
+    border-bottom: none;
+  }
+
+  .goods-list__item:last-child {
+    border-bottom: 1px solid rgba(#cdcdcd, 0.5);
   }
 
   .goods-list__desktop-wrap {
@@ -114,11 +120,12 @@
     min-height: 71px;
     border-left: none;
     border-right: none;
+    border-bottom: none;
   }
 
-  /*.goods-list__item:nth-child(2n + 1) {
-    border-top: 1px solid#d2d2d2;
-  }*/
+  .goods-list__item:last-child {
+    border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+  }
 
   .goods-list__wrap-center {
     margin: 0 -16px 0 0;

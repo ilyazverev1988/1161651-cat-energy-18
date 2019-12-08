@@ -30,6 +30,7 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   width: 280px;
   height: 289px;
+  position: relative;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -45,16 +46,15 @@
   position: relative;
   width: 159px;
   text-align: center;
+}
 
-  &--image-present::after {
-    position: absolute;
-    content: "";
-    width: 55px;
-    height: 60px;
-    background-image: url("../img/icon-gift.svg");
-    top: -127px;
-    left: 47px;
-  }
+.additionally__image-present {
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  top: 74px;
+  left: 107px;
+  fill: white;
 }
 
 .additionally__wrap-desktop {
@@ -92,11 +92,11 @@
     margin-top: 21px;
     text-align: left;
     width: 161px;
+  }
 
-    &--image-present::after {
-      top: -7px;
-      left: -331px;
-    }
+  .additionally__image-present {
+    top: 74px;
+    left: 107px;
   }
 
   .additionally__list {
@@ -137,10 +137,10 @@
   .additionally__present {
     margin: 147px 44px 0 0;
     text-align: center;
+  }
 
-    &--image-present::after {
-      top: -122px;
-      left: 54px;
-    }
+  .additionally__image-present {
+    top: 74px;
+    left: 93px;
   }
 }

@@ -3,6 +3,16 @@
   text-decoration: none;
 }
 
+.author:hover .author__image,
+.author:focus .author__image {
+  fill: #68b738;
+}
+
+.author:active .author__name,
+.author:active .author__image {
+  opacity: 0.3;
+}
+
 .author__name {
   width: 114px;
   color: #444444;
@@ -14,7 +24,7 @@
 }
 
 .author__image {
-  fill: #111111;
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
