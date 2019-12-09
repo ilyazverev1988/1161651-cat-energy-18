@@ -26,7 +26,14 @@
     border-radius: 3px;
     background-color: #68b738;
     cursor: pointer;
-    transition: 0.1s;
+
+    &::-moz-range-thumb {
+      width: 35px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: #68b738;
+      cursor: pointer;
+    }
   }
 }
 
@@ -35,7 +42,7 @@
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 6px;
-    border-bottom: 1px dashed #d3d3d3;
+    border-bottom: 1px dashed rgba(#d6d6d6, 0.23);
   }
 
   .cat-change__range {
@@ -43,13 +50,21 @@
     height: 6px;
     border-radius: 3px;
     background-color: #dcdcdc;
-    position: relative;
-  }
 
-  &::-webkit-slider-thumb {
-    content: "";
-    width: 34px;
-    height: 34px;
-    background-image: url("../img/for_range.png");
+    &::-webkit-slider-thumb {
+      width: 36px;
+      height: 39px;
+      background-color: transparent;
+      background-image: url("../img/2-layers.png");
+    }
+
+    &::-moz-range-thumb {
+      width: 34px;
+      height: 34px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+      background-color: #ffffff;
+    }
   }
 }

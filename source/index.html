@@ -153,7 +153,7 @@
             </div>
             <div class="slider__slider cat-change">
               <p class="cat-change__time">Было</p>
-              <input class="cat-change__range" type="range" min="0" max="2" value="0" id="myRange">
+              <input class="cat-change__range" type="range" min="0" max="100" value="0" id="myRange">
               <p class="cat-change__time">Стало</p>
             </div>
           </div>
@@ -188,25 +188,33 @@
           <ul class="footer__list social-list">
             <li class="social-list__item">
               <a class="social-list__link" href="">
-                <img class="social-list__vk" src="img/icon-vk.svg" width="22" height="12" alt="Ссылка в контакте">
+                <svg class="social-list__vk" width="22" height="12" aria-label="Ссылка в контакте">
+                  <use xlink:href="img/sprite.svg#icons-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link" href="">
-                <img class="social-list__inst" src="img/icon-insta.svg" width="16" height="16"
-                  alt="Ссылка в инстаграм"></a>
+                <svg class="social-list__inst" width="16" height="16" aria-label="Ссылка в инстаграм">
+                  <use xlink:href="img/sprite.svg#icons-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link" href="">
-                <img class="social-list__fb" src="img/icon-fb.svg" width="10" height="19" alt="Ссылка в фейсбук"></a>
+                <svg class="social-list__fb" width="10" height="19" aria-label="Ссылка в фейсбук">
+                  <use xlink:href="img/sprite.svg#icons-fb"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="footer__container author">
-          <a class="author__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="author__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="author__image"
-              src="img/htmlacademy.svg" width="27" height="34" alt="Академия HTML"></a>
-        </div>
+        <a class="footer__html author" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="author__name">HTML Academy</p>
+          <svg class="author__image" width="27" height="34" aria-label="Академия HTML">
+            <use xlink:href="img/sprite.svg#icons-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

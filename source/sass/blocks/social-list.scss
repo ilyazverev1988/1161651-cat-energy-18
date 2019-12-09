@@ -3,6 +3,22 @@
   margin-right: 40px;
 }
 
+.social-list__vk:hover,
+.social-list__inst:hover,
+.social-list__fb:hover,
+.social-list__vk:focus,
+.social-list__inst:focus,
+.social-list__fb:focus {
+  fill: #68b738;
+}
+
+.social-list__vk:active,
+.social-list__inst:active,
+.social-list__fb:active {
+  fill: #68b738;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .social-list__vk {
     width: 30px;

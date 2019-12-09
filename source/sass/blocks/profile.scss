@@ -1,5 +1,21 @@
-.profile {
+.profile__wrap-center {
   margin: 0 auto;
+}
+
+.profile__wrap-border {
+  padding-bottom: 37px;
+  border-bottom: 3px solid #68b738;
+  margin-bottom: -17px;
+
+  &--contact {
+    padding-bottom: 25px;
+    margin-bottom: -24px;
+  }
+
+  &--habits {
+    padding-bottom: 28px;
+    margin-bottom: -25px;
+  }
 }
 
 .profile__title-section {
@@ -48,16 +64,13 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0 94px 18px 20px;
+  margin: -23px 94px 18px 0;
   position: relative;
   transform: translateY(50%);
   display: inline-block;
   background-color: white;
   padding-right: 24px;
-
-  &----comment {
-    margin-top: 5px;
-  }
+  padding-left: 20px;
 }
 
 .profile__wrap-submit,
@@ -69,14 +82,12 @@
 .profile__checkbox {
   margin: -14px 0 36px 20px;
   padding-top: 25px;
-  border-top: 3px solid #68b738;
 }
 
 .profile__comment {
   margin: -17px 20px 0 19px;
   padding-top: 24px;
   padding-bottom: 18px;
-  border-top: 3px solid #68b738;
 }
 
 .profile__about {
@@ -127,6 +138,16 @@
     align-items: center;
   }
 
+  .profile__wrap-border {
+    padding-bottom: 121px;
+    margin-bottom: -124px;
+
+    &--contact {
+      padding-bottom: 122px;
+      margin-bottom: -122px;
+    }
+  }
+
   .profile__title-section {
     font-size: 60px;
     margin: 57px 0 55px 28px;
@@ -173,7 +194,6 @@
     margin: 0;
     padding-bottom: 0;
     padding-left: 70px;
-    border-top: 3px solid #68b738;
     padding-right: 67px;
     padding-top: 89px;
     margin-top: 0;
@@ -206,16 +226,31 @@
 @media (min-width: $desktop-width) {
   .profile__write {
     width: 322px;
-    margin: 53px 0 0 40px;
+    margin: 53px 0 0 32px;
+  }
+
+  .profile__wrap-border {
+    padding-bottom: 69px;
+    margin-bottom: -117px;
+
+    &--contact {
+      padding-bottom: 90px;
+      margin-bottom: -117px;
+    }
+
+    &--habits {
+      padding-bottom: 78px;
+      margin-bottom: -117px;
+    }
   }
 
   .profile__title-section {
-    margin: 0 0 0 40px;
+    margin: 75px 0 0 33px;
   }
 
   .profile__wrap-desktop {
     display: flex;
-    margin: 69px 40px 0 40px;
+    margin: 62px 40px 0 33px;
   }
 
   .profile__wrap {
@@ -225,7 +260,7 @@
 
   .profile__about {
     display: flex;
-    margin: 0 40px 0 30px;
+    margin: 21px 40px 0 24px;
     padding-top: 70px;
     padding-left: 10px;
   }
@@ -244,7 +279,7 @@
   }
 
   .profile__contact {
-    margin: 73px 0 0 40px;
+    margin: 73px 0 0 -7px;
 
     &::before {
       width: 750px;
@@ -260,13 +295,13 @@
   }
 
   .profile__checkbox {
-    margin: 0 140px 0 90px;
+    margin: 17px 0 0 34px;
     padding-top: 64px;
     padding-left: 10px;
   }
 
   .profile__wrap-tablet {
-    margin: 85px 429px 97px 250px;
+    margin: 68px 438px 91px 33px;
   }
 
   .profile__submit--green::before {
