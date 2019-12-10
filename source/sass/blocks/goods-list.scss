@@ -8,6 +8,10 @@
   padding-bottom: 17px;
 }
 
+.goods-list__item:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
 .goods-list__wrap {
   display: flex;
   justify-content: space-between;
@@ -45,8 +49,10 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 13px 108px 12px 111px;
+  padding: 13px 0 12px 0;
   background-color: #68b738;
+  width: 100%;
+  text-align: center;
 
   &:active {
     color: rgba(#000000, 0.3);
@@ -65,11 +71,10 @@
   }
 
   .goods-list__order {
-    text-align: center;
-    width: 100%;
     margin-top: -2px;
     margin-left: -3px;
-    padding: 10px 108px 12px 111px;
+    width: 100%;
+    text-align: center;
   }
 
   .goods-list__item {
@@ -164,6 +169,6 @@
   .goods-list__order {
     margin-top: -8px;
     margin-right: 18px;
-    padding: 8px 91px 12px 87px;
+    width: 245px;
   }
 }

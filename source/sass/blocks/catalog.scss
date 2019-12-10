@@ -14,6 +14,8 @@
   margin: 0;
   padding: 13px 44px 27px 21px;
   border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
 }
 
 .catalog__list {
@@ -26,8 +28,13 @@
 @media (min-width: $tablet-width) {
   .catalog__title {
     font-size: 60px;
-    border-bottom: none;
+    border: none;
     padding: 57px 0 22px 30px;
+    text-align: left;
+  }
+
+  .catalog__conteiner {
+    margin: 0 auto;
   }
 
   .catalog__list {

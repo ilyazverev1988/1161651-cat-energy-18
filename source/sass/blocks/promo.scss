@@ -8,8 +8,8 @@
     right: 0;
     width: 100%;
     min-height: 307px;
-    background-color: #63a73a;
     z-index: -3;
+    background: linear-gradient(to right, #65a93c calc(45%), #63a73a calc(55%));
   }
 }
 
@@ -76,7 +76,7 @@
   position: relative;
   text-decoration: none;
   background-color: #68b738;
-  padding: 12px 74px 12px 73px;
+  padding: 12px 0 12px 0;
 
   &:active {
     color: rgba(#000000, 0.3);
@@ -93,7 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .promo::before {
-    background-color: white;
+    background: none;
   }
 
   .promo__food {
@@ -104,18 +104,18 @@
     text-transform: none;
     text-align: left;
     margin-top: 58px;
+    margin-left: 120px;
   }
 
   .promo__slogan {
     color: #111111;
     font-size: 20px;
     line-height: 20px;
-    margin: 40px 0 0 0;
+    margin: 40px 0 0 120px;
   }
 
   .promo-wrap {
     align-items: flex-start;
-    padding-left: 120px;
 
     &::before {
       display: none;
@@ -123,10 +123,11 @@
   }
 
   .promo__program {
-    padding: 17px 29px 15px 26px;
+    padding: 12px 0 12px 0;
+    width: 245px;
     font-size: 20px;
     line-height: 20px;
-    margin: 46px 0 0 0;
+    margin: 46px 0 0 120px;
     position: absolute;
   }
 
@@ -134,7 +135,7 @@
     align-self: center;
     order: 2;
     margin-top: 20px;
-    margin-left: -175px;
+    margin-left: 26px;
   }
 
   .promo__wrap-tablet {
@@ -154,38 +155,6 @@
     position: relative;
   }
 
-  .promo {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: -125px;
-      right: 0;
-      width: 50%;
-      height: 703px;
-      background-color: #63a73a;
-      z-index: -3;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: -118px;
-      left: 50%;
-      width: 720px;
-      height: 696px;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      z-index: -2;
-      background-position: right;
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px auto;
-      }
-    }
-  }
-
   .promo__food-image {
     margin-left: 370px;
     margin-top: -259px;
@@ -197,6 +166,7 @@
 
   .promo__food {
     margin-top: 107px;
+    margin-left: 0;
   }
 
   .promo__slogan {
@@ -205,5 +175,9 @@
 
   .promo__program {
     margin: 52px 0 0 -6px;
+  }
+
+  .promo::before {
+    background-color: transparent;
   }
 }
