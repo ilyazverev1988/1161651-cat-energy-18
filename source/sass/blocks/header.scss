@@ -1,4 +1,4 @@
-.header {
+.header__wrap-center {
   margin: 0 auto;
 }
 
@@ -13,7 +13,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 11px 20px 11px 20px;
-  border-bottom: 1px solid #e6e6e6;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .header__nav--closed .header__menu {
@@ -104,6 +105,10 @@
     margin: 24px 31px 0 29px;
   }
 
+  .header__conteiner {
+    margin: 0 auto;
+  }
+
   .header__menu {
     display: none;
   }
@@ -131,7 +136,8 @@
 
 @media (min-width: $desktop-width) {
   .header__nav {
-    margin: 54px 40px 0 40px;
+    padding: 54px 40px 0 40px;
+    margin: 0;
   }
 
   .header__list {
@@ -145,5 +151,28 @@
   .header__logo {
     width: 202px;
     height: 59px;
+  }
+
+  .header__index {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 703px;
+      background-color: #63a73a;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      z-index: -3;
+      background-position: right;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
   }
 }
