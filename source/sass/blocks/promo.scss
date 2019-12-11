@@ -152,6 +152,7 @@
 @media (min-width: $desktop-width) {
   .promo-wrap {
     padding-left: 116px;
+    padding-bottom: 54px;
     position: relative;
   }
 
@@ -175,9 +176,5 @@
 
   .promo__program {
     margin: 52px 0 0 -6px;
-  }
-
-  .promo::before {
-    background-color: transparent;
   }
 }

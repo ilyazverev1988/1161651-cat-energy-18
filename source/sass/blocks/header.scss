@@ -162,11 +162,11 @@
       top: 0;
       right: 0;
       width: 50%;
-      height: 703px;
+      height: 100%;
       background-color: #63a73a;
       background-image: url("../img/index-background-desktop@1x.jpg");
       z-index: -3;
-      background-position: right;
+      background-position: right top;
       background-repeat: no-repeat;
 
       @media (min-resolution: $retina-dppx) {

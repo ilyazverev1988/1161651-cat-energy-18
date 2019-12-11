@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
@@ -163,11 +164,11 @@ img {
       top: 0;
       right: 0;
       width: 50%;
-      height: 703px;
+      height: 100%;
       background-color: #63a73a;
       background-image: url("../img/index-background-desktop@1x.jpg");
       z-index: -3;
-      background-position: right;
+      background-position: right top;
       background-repeat: no-repeat; } }
     @media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1300px) and (min-resolution: 1.5dppx) {
       .header__index::before {
@@ -185,7 +186,7 @@ img {
     min-height: 307px;
     z-index: -3;
     background: -webkit-gradient(linear, left top, right top, from(#65a93c), to(#63a73a));
-    background: linear-gradient(to right, #65a93c calc(40%), #63a73a calc(60%)); }
+    background: linear-gradient(to right, #65a93c calc(45%), #63a73a calc(55%)); }
 
 .promo__wrap-center {
   margin: 0 auto; }
@@ -316,6 +317,7 @@ img {
 @media (min-width: 1300px) {
   .promo-wrap {
     padding-left: 116px;
+    padding-bottom: 54px;
     position: relative; }
   .promo__food-image {
     margin-left: 370px;
@@ -328,9 +330,7 @@ img {
   .promo__slogan {
     margin: 43px 0 0 -4px; }
   .promo__program {
-    margin: 52px 0 0 -6px; }
-  .promo::before {
-    background-color: transparent; } }
+    margin: 52px 0 0 -6px; } }
 
 .selection {
   margin: 0 auto; }
@@ -480,6 +480,8 @@ img {
     margin-top: 13px; } }
 
 @media (min-width: 1300px) {
+  .example {
+    background: none; }
   .example__header {
     top: -130px;
     position: absolute;
@@ -872,11 +874,14 @@ img {
 
 @media (min-width: 768px) {
   .slider__slider {
-    background-color: #f2f2f2;
+    background: none;
     position: relative;
     z-index: 1;
-    margin-top: 152px;
-    padding-bottom: 35px; }
+    padding-bottom: 29px;
+    padding-top: 158px; }
+  .slider {
+    background: -webkit-gradient(linear, left top, right top, from(#f2f2f2), to(#eaeaea));
+    background: linear-gradient(to right, #f2f2f2 calc(50%), #eaeaea calc(50%)); }
   .slider__image-fat {
     position: absolute;
     top: -170px;
@@ -889,7 +894,8 @@ img {
   .slider__wrap-image {
     min-height: 150px;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    background: none; }
   .slider__container {
     margin: 255px auto 0 auto;
     width: 767px; } }
@@ -1558,7 +1564,8 @@ img {
   position: relative; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
     .additionally__present-wrap {
-      background-image: url("../img/gift-photo-mobile@2x.jpg"); } }
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: 280px auto; } }
 
 .additionally__present {
   color: white;
@@ -2537,8 +2544,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .address__wrap-background {
-    background-color: #f2f2f2; }
   .address__invite {
     font-size: 20px;
     line-height: 25px;
@@ -2601,23 +2606,40 @@ img {
       border-radius: 3px;
       background-color: #68b738;
       cursor: pointer; }
+    .cat-change__range::-webkit-slider-thumb::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+      border-color: transparent;
+      color: transparent; }
+    .cat-change__range::-webkit-slider-thumb::-ms-thumb {
+      width: 35px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: #68b738;
+      cursor: pointer; }
 
 @media (min-width: 768px) {
   .cat-change__time {
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 6px;
-    border-bottom: 1px dashed rgba(214, 214, 214, 0.23); }
+    border-bottom: 1px dashed rgba(214, 214, 214, 0.23);
+    margin: 26px 2px 38px 2px; }
   .cat-change__range {
     width: 428px;
     height: 6px;
     border-radius: 3px;
     background-color: #dcdcdc; }
     .cat-change__range::-webkit-slider-thumb {
-      width: 36px;
-      height: 39px;
-      background-color: transparent;
-      background-image: url("../img/2-layers.png"); }
+      width: 34px;
+      height: 34px;
+      border-radius: 17px;
+      background-color: #68b738;
+      border: 1px solid #cdcdcd;
+      -webkit-box-shadow: inset 0 0 0 11px #ffffff, 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+              box-shadow: inset 0 0 0 11px #ffffff, 0 2px 5px 1px rgba(0, 0, 0, 0.15); }
     .cat-change__range::-moz-range-thumb {
       width: 34px;
       height: 34px;

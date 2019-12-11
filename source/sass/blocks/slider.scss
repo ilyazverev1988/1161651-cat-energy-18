@@ -21,11 +21,15 @@
 
 @media (min-width: $tablet-width) {
   .slider__slider {
-    background-color: #f2f2f2;
+    background: none;
     position: relative;
     z-index: 1;
-    margin-top: 152px;
-    padding-bottom: 35px;
+    padding-bottom: 29px;
+    padding-top: 158px;
+  }
+
+  .slider {
+    background: linear-gradient(to right, #f2f2f2 calc(50%), #eaeaea calc(50%));
   }
 
   .slider__image-fat {
@@ -45,6 +49,7 @@
     min-height: 150px;
     position: relative;
     z-index: 2;
+    background: none;
   }
 
   .slider__container {

@@ -90,6 +90,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background: none;
+  }
+
   .example__header {
     top: -130px;
     position: absolute;
