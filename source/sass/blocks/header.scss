@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 20px 11px 20px;
+  padding: 11px 0 11px 0;
   width: 320px;
   margin: 0 auto;
 }
@@ -25,6 +25,7 @@
   position: relative;
   outline: none;
   cursor: pointer;
+  margin-right: 20px;
 
   &::before {
     content: "";
@@ -47,6 +48,7 @@
   position: relative;
   outline: none;
   cursor: pointer;
+  margin-right: 20px;
 
   &::before {
     content: "";
@@ -62,6 +64,8 @@
 }
 
 .header__logo {
+  padding-left: 20px;
+
   &--active {
     pointer-events: none;
   }

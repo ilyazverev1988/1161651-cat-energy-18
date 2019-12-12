@@ -40,10 +40,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  margin-right: 20px;
 
   &:last-child {
-    margin: 0;
+    margin-right: 20px;
     padding-bottom: 23px;
+    margin-bottom: 0;
   }
 }
 
@@ -62,5 +64,10 @@
 
   .animal__item {
     margin-bottom: 20px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

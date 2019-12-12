@@ -33,7 +33,7 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  margin: 0 0 24px 0;
+  margin: -1px 20px 24px 0;
   text-align: center;
   padding-top: 15px;
   border-top: 1px solid #ededed;
@@ -45,7 +45,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 96px 39px 0;
+  margin: 0 55px 40px 0;
   text-align: left;
 }
 
@@ -53,6 +53,7 @@
   padding: 0 19px;
   width: 320px;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .profile__wrap,
@@ -93,6 +94,7 @@
 .profile__wrap-necessarily {
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .profile__checkbox {
@@ -151,7 +153,7 @@
   .profile__wrap-tablet {
     display: flex;
     justify-content: space-between;
-    margin: 29px 175px 72px 68px;
+    margin: 29px 136px 72px 68px;
     align-items: center;
   }
 
@@ -170,7 +172,7 @@
   }
 
   .profile__wrap-border {
-    padding-bottom: 121px;
+    padding-bottom: 120px;
     margin-bottom: -124px;
 
     &--contact {
@@ -181,7 +183,7 @@
 
   .profile__title-section {
     font-size: 60px;
-    margin: 57px 0 55px 0;
+    margin: 44px 0 55px 47px;
     border: none;
     float: left;
     text-align: left;
@@ -189,7 +191,7 @@
 
   .profile__write {
     font-size: 20px;
-    margin: 53px 0 61px 0;
+    margin: 0 0 60px 90px;
     line-height: 30px;
   }
 
@@ -208,6 +210,8 @@
   .profile__wrap,
   .profile__radio {
     border-bottom: none;
+    padding-left: 90px;
+    padding-right: 46px;
   }
 
   .profile__radio {
@@ -218,7 +222,7 @@
   .profile__contact {
     font-size: 36px;
     line-height: 36px;
-    margin: 79px 23px 0 28px;
+    margin: 82px 23px 0 51px;
     padding-left: 38px;
     padding-right: 45px;
   }
@@ -226,23 +230,23 @@
   .profile__about {
     margin: 0;
     padding-bottom: 0;
-    padding-left: 70px;
+    padding-left: 89px;
     padding-right: 67px;
-    padding-top: 89px;
+    padding-top: 93px;
     margin-top: 0;
     margin-bottom: -51px;
   }
 
   .profile__comment {
-    margin: 0 65px -47px 67px;
+    margin: 1px 65px -47px 87px;
     padding-top: 71px;
     padding-left: 10;
   }
 
   .profile__checkbox {
     margin: 0;
-    padding-top: 63px;
-    padding-left: 65px;
+    padding-top: 60px;
+    padding-left: 87px;
   }
 
   .profile__text {
