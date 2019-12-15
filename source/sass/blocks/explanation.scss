@@ -1,4 +1,4 @@
-.explanation {
+.explanation__center {
   margin: 0 auto;
 }
 
@@ -12,31 +12,39 @@
 
 .explanation__list {
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 18px 0;
   margin: 32px 23px 0 21px;
 }
 
 @media (min-width: $tablet-width) {
+  .explanation {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .explanation_detail {
     font-size: 60px;
-    margin: 40px 0 76px 31px;
+    margin: 40px 0 76px 32px;
   }
 
   .explanation__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 35px 0 0 30px;
-    border-bottom: 1px solid #e6e6e6;
+    margin: 35px 0 0 31px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .explanation_detail {
-    margin: 72px 0 0 34px;
+    margin: 75px 0 0 40px;
   }
 
   .explanation__list {
-    margin: 76px 40px 0 30px;
+    margin: 74px 0 0 42px;
     border-bottom: none;
+  }
+
+  .explanation {
+    border: none;
   }
 }

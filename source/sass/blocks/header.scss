@@ -106,7 +106,7 @@
   .header__nav {
     display: flex;
     align-items: center;
-    margin: 24px 31px 0 29px;
+    margin: 24px auto 0 auto;
   }
 
   .header__conteiner {
@@ -120,16 +120,18 @@
   .header__list {
     display: flex;
     white-space: nowrap;
-    margin-top: 11px;
+    margin-top: 12px;
+    margin-right: 28px;
   }
 
-  .header__wrapper {
+  /*.header__wrapper {
     margin-left: 96px;
-  }
+  }*/
 
   .header__wrap {
     padding: 0;
     border-bottom: none;
+    margin-left: 12px;
   }
 
   .header__logo {
@@ -144,12 +146,19 @@
     margin: 0;
   }
 
+  .header__wrap {
+    margin-left: -8px;
+  }
+
   .header__list {
     display: flex;
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .header__wrapper {
-    margin-left: 531px;
+    margin-left: 529px;
   }
 
   .header__logo {

@@ -1,6 +1,5 @@
-.social-list__item:nth-child(2n) {
-  margin-left: 37px;
-  margin-right: 40px;
+.social-list__item {
+  margin-top: 20px;
 }
 
 .social-list__vk:hover,
@@ -38,5 +37,11 @@
   .social-list__item:nth-child(2n) {
     margin-left: 28px;
     margin-right: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__item {
+    margin-top: 30px;
   }
 }

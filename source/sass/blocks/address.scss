@@ -16,8 +16,8 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 126px;
-  margin-top: 27px;
-  margin-left: 21px;
+  margin-top: 28px;
+  margin-left: 20px;
 }
 
 .address__address {
@@ -26,9 +26,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  width: 135px;
+  width: 136px;
   margin-top: 28px;
   margin-left: 15px;
+}
+
+.address__address br {
+  display: none;
 }
 
 .adress__wrap-map {
@@ -48,6 +52,10 @@
 
 .address__wrap-background {
   background-color: white;
+
+  &--gray {
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -60,17 +68,22 @@
   .address__invite {
     font-size: 20px;
     line-height: 25px;
-    width: 139px;
-    margin-left: 70px;
-    margin-top: 27px;
+    width: 154px;
+    margin-left: 73px;
+    margin-top: 26px;
   }
 
   .address__address {
     width: 159px;
     font-size: 16px;
-    margin-top: 1px;
-    margin-right: 72px;
+    margin-top: 23px;
+    margin-right: 71px;
     text-align: right;
+    min-height: 76px;
+  }
+
+  .address__address br {
+    display: block;
   }
 
   .adress__map {
@@ -84,12 +97,16 @@
 
 @media (min-width: $desktop-width) {
   .address__container.width {
-    width: 570px;
+    width: 554px;
     height: 201px;
     position: absolute;
     z-index: 1;
     background-color: white;
-    top: 130px;
-    left: 5px;
+    top: 94px;
+    left: 97px;
+  }
+
+  .address__address {
+    text-align: left;
   }
 }

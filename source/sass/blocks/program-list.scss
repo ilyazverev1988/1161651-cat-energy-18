@@ -9,6 +9,10 @@
   margin-bottom: 20px;
 }
 
+.program-list__description br {
+  display: none;
+}
+
 .program-list__heading {
   color: #111111;
   font-size: 24px;
@@ -63,7 +67,7 @@
   font-weight: 400;
   line-height: 18px;
   padding-bottom: 23px;
-  margin: 30px 20px 15px 20px;
+  margin: 28px 20px 15px 20px;
   border-bottom: 1px solid rgba(#000000, 0.1);
 }
 
@@ -90,6 +94,7 @@
     width: 24px;
     height: 11px;
     background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
   }
 
   &:hover::before,
@@ -105,7 +110,7 @@
   .program-list__heading {
     font-size: 36px;
     line-height: 37.02px;
-    padding: 73px 0 0 55px;
+    padding: 73px 0 0 53px;
     text-align: left;
 
     &::before {
@@ -135,9 +140,13 @@
     font-size: 16px;
     line-height: 24px;
     width: 372px;
-    margin: 25px 0 55px 53px;
+    margin: 24px 0 58px 53px;
     padding: 0;
     border-bottom: none;
+  }
+
+  .program-list__description br {
+    display: block;
   }
 
   .program-list__catalog {
@@ -146,15 +155,15 @@
     margin: 0 0 62px 53px;
 
     &::before {
-      top: 10px;
-      left: 131px;
+      top: 9px;
+      left: 126px;
     }
   }
 
   .program-list__item {
     width: 708px;
     min-height: 372px;
-    margin: 0 30px 30px 30px;
+    margin: 0 auto 31px auto;
   }
 }
 
@@ -177,27 +186,43 @@
       width: 100px;
       height: 100px;
       border-radius: 50px;
-      top: 45px;
-      left: 50px;
+      top: 48px;
+      left: 58px;
     }
 
-    &--icon-thin::after {
-      width: 70px;
-      height: 97px;
-      top: 40px;
-      left: 63px;
+    &--icon-thin {
+      padding: 79px 0 75px 30px;
+
+      &::after {
+        width: 70px;
+        height: 97px;
+        top: 41px;
+        left: 69px;
+      }
     }
 
-    &--icon-fat::after {
-      width: 134px;
-      height: 56px;
-      top: 67px;
-      left: 32px;
+    &--icon-fat {
+      padding: 80px 0 75px 75px;
+
+      &::after {
+        width: 134px;
+        height: 56px;
+        top: 69px;
+        left: 38px;
+      }
     }
   }
 
   .program-list__description {
     width: 462px;
-    margin: -2px 0 32px 46px;
+    margin: -2px 0 32px 57px;
+  }
+
+  .program-list__description br {
+    display: none;
+  }
+
+  .program-list__catalog {
+    margin: 0 0 62px 58px;
   }
 }

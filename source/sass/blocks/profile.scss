@@ -1,14 +1,9 @@
 .profile__wrap-center {
   margin: 0 auto;
-
-  &--padding {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 .profile__wrap-border {
-  padding-bottom: 37px;
+  padding-bottom: 36px;
   border-bottom: 3px solid #68b738;
   margin-bottom: -17px;
 
@@ -33,10 +28,11 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  margin: -1px 20px 24px 0;
+  margin: -1px 0 27px 0;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 14px;
   border-top: 1px solid #ededed;
+  padding-right: 23px;
 }
 
 .profile__write {
@@ -45,7 +41,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 55px 40px 0;
+  margin: 0 55px 39px 0;
   text-align: left;
 }
 
@@ -81,7 +77,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin: -23px 94px 18px 0;
+  margin: -22px 97px 18px -2px;
   position: relative;
   transform: translateY(50%);
   display: inline-block;
@@ -98,12 +94,12 @@
 }
 
 .profile__checkbox {
-  margin: -14px 0 36px 20px;
+  margin: -14px 0 36px 18px;
   padding-top: 25px;
 }
 
 .profile__comment {
-  margin: -17px 20px 0 19px;
+  margin: -13px 21px 0 19px;
   padding-top: 24px;
   padding-bottom: 18px;
 }
@@ -124,7 +120,7 @@
   position: relative;
   cursor: pointer;
   background-color: #68b738;
-  padding: 13px 0 11px 0;
+  padding: 13px 0 10px 0;
   width: 100%;
   white-space: nowrap;
   outline: none;
@@ -146,14 +142,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  margin: 18px 0 34px 0;
+  margin: 21px 0 31px -3px;
 }
 
 @media (min-width: $tablet-width) {
   .profile__wrap-tablet {
     display: flex;
     justify-content: space-between;
-    margin: 29px 136px 72px 68px;
+    margin: 29px 153px 72px 51px;
     align-items: center;
   }
 
@@ -172,8 +168,8 @@
   }
 
   .profile__wrap-border {
-    padding-bottom: 120px;
-    margin-bottom: -124px;
+    padding-bottom: 121px;
+    margin-bottom: -131px;
 
     &--contact {
       padding-bottom: 122px;
@@ -183,7 +179,7 @@
 
   .profile__title-section {
     font-size: 60px;
-    margin: 44px 0 55px 47px;
+    margin: 44px 0 56px 30px;
     border: none;
     float: left;
     text-align: left;
@@ -191,7 +187,7 @@
 
   .profile__write {
     font-size: 20px;
-    margin: 0 0 60px 90px;
+    margin: 0 0 60px 71px;
     line-height: 30px;
   }
 
@@ -203,50 +199,60 @@
     &--border {
       border: 1px solid rgba(#cdcdcd, 0.5);
       width: auto;
-      min-height: 189px;
+      min-height: 196px;
     }
   }
 
   .profile__wrap,
   .profile__radio {
     border-bottom: none;
-    padding-left: 90px;
-    padding-right: 46px;
+    padding-left: 73px;
+    padding-right: 66px;
   }
 
   .profile__radio {
-    margin-top: 49px;
-    margin-bottom: -25px;
+    margin-top: 51px;
+    margin-bottom: -30px;
   }
 
   .profile__contact {
     font-size: 36px;
     line-height: 36px;
-    margin: 82px 23px 0 51px;
     padding-left: 38px;
     padding-right: 45px;
+
+    &--owner {
+      margin: 88px 0 0 31px;
+    }
+
+    &--comment {
+      margin: 77px 0 0 33px;
+    }
+
+    &--additionally {
+      margin: 88px 0 0 33px;
+    }
   }
 
   .profile__about {
     margin: 0;
     padding-bottom: 0;
-    padding-left: 89px;
-    padding-right: 67px;
-    padding-top: 93px;
+    padding-left: 71px;
+    padding-right: 64px;
+    padding-top: 90px;
     margin-top: 0;
-    margin-bottom: -51px;
+    margin-bottom: -55px;
   }
 
   .profile__comment {
-    margin: 1px 65px -47px 87px;
+    margin: 5px 67px -47px 69px;
     padding-top: 71px;
-    padding-left: 10;
   }
 
   .profile__checkbox {
     margin: 0;
-    padding-top: 60px;
-    padding-left: 87px;
+    padding-top: 65px;
+    padding-left: 68px;
   }
 
   .profile__text {
@@ -264,7 +270,7 @@
 @media (min-width: $desktop-width) {
   .profile__write {
     width: 322px;
-    margin: 53px 0 0 32px;
+    margin: 54px 0 2px 45px;
   }
 
   .profile__wrap-border {
@@ -283,29 +289,34 @@
   }
 
   .profile__title-section {
-    margin: 75px 0 0 33px;
+    margin: 62px 0 0 43px;
     text-align: left;
   }
 
   .profile__wrap-desktop {
     display: flex;
-    margin: 62px 40px 0 33px;
+    margin: 62px 32px 0 33px;
   }
 
   .profile__wrap {
     width: 570px;
-    margin-right: 80px;
+    margin-right: -128px;
+    padding-left: 13px;
+    padding-right: 0;
   }
 
   .profile__about {
     display: flex;
     margin: 21px 40px 0 24px;
     padding-top: 70px;
-    padding-left: 10px;
+    padding-left: 23px;
   }
 
   .profile__radio {
     margin: 0;
+    margin-left: 207px;
+    padding: 0;
+    margin-top: 2px;
   }
 
   .profile__wrap-padding--border {
@@ -318,29 +329,41 @@
   }
 
   .profile__contact {
-    margin: 73px 0 0 -7px;
+    padding-left: 44px;
 
     &::before {
       width: 750px;
       top: 23px;
       left: 525px;
     }
+
+    &--owner {
+      margin: 72px 0 0 0;
+    }
+
+    &--comment {
+      margin: 72px 0 0 0;
+    }
+
+    &--additionally {
+      margin: 74px 0 0 0;
+    }
   }
 
   .profile__comment {
-    margin: 0 40px 0 30px;
-    padding-top: 71px;
-    padding-left: 10px;
+    margin: 0 35px 0 30px;
+    padding-top: 74px;
+    padding-left: 13px;
   }
 
   .profile__checkbox {
-    margin: 17px 0 0 34px;
+    margin: 17px 0 0 47px;
     padding-top: 64px;
     padding-left: 10px;
   }
 
   .profile__wrap-tablet {
-    margin: 68px 438px 91px 33px;
+    margin: 68px 404px 83px 27px;
   }
 
   .profile__submit--green::before {

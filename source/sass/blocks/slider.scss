@@ -53,14 +53,14 @@
   }
 
   .slider__container {
-    margin: 255px auto 0 auto;
+    margin: 253px auto 0 auto;
     width: 767px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
-    background-color: rgba(#f2f2f2, 0);
+    background: linear-gradient(to right, #f2f2f2 calc(58%), #eaeaea calc(58%));
   }
 
   .slider__wrap-image {
@@ -69,8 +69,9 @@
 
   .slider__slider {
     background-color: rgba(#f2f2f2, 0);
-    margin-top: 179px;
+    margin-top: 173px;
     margin-left: 118px;
+    padding: 0;
   }
 
   .slider__container {

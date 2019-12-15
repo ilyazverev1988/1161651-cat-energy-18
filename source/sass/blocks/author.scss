@@ -21,14 +21,29 @@
   font-weight: 400;
   line-height: 16px;
   margin-left: 19px;
+  white-space: nowrap;
 }
 
 .author__image {
   fill: #666666;
+  width: 41px;
+  height: 76px;
+  margin-right: 12px;
 }
 
 @media (min-width: $tablet-width) {
   .author__link {
     margin-left: 23px;
+  }
+
+  .author__image {
+    margin-right: 21px;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author__image {
+    margin-right: 27px;
   }
 }

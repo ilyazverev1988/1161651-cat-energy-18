@@ -81,18 +81,19 @@
       </div>
       <div class="profile__wrap-border profile__wrap-border--contact">
         <div class="profile__wrap-center width">
-          <h3 class="profile__contact">Контактные данные (владельца кота)</h3>
+          <h3 class="profile__contact profile__contact--owner">Контактные данные (владельца кота)</h3>
           <ul class="profile__about contact">
             <li class="contact__item contact__item--icon-letter"><label class="contact__label" for="email"
                 required>E-mail:*</label>
-              <input class="contact__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              <input class="contact__input contact__input--email" type="email" name="email" id="email"
+                placeholder="kuklachev@gmail.com">
               <svg class="contact__icon-letter" width="17" height="13" aria-label="Иконка письма">
                 <use xlink:href="img/sprite.svg#icons-mail"></use>
               </svg>
             </li>
             <li class="contact__item contact__item--icon-telephone"><label class="contact__label"
                 for="telephone">Телефон:*</label>
-              <input class="contact__input contact__input" type="tel" name="telephone" id="telephone"
+              <input class="contact__input contact__input--telephone" type="tel" name="telephone" id="telephone"
                 placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
               <svg class="contact__icon-telephone" width="20" height="20" aria-label="Иконка телефона">
                 <use xlink:href="img/sprite.svg#icons-phone"></use>
@@ -111,7 +112,7 @@
         </div>
       </div>
       <div class="profile__wrap-center profile__wrap-center--padding  width">
-        <h3 class="profile__contact">Дополнительно</h3>
+        <h3 class="profile__contact profile__contact--additionally">Дополнительно</h3>
         <ul class="profile__checkbox add">
           <li class="add__item">
             <input class="add__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -142,11 +143,13 @@
       </form>
     </section>
     <section class="address">
-      <div class="address__container width">
-        <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
-        <p class="address__address" aria-label="Наш адрес">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+      <div class="address__wrap-background  address__wrap-background--gray">
+        <div class="address__container width">
+          <p class="address__invite">приглашаем <br> к сотрудничеству дилеров!</p>
+          <p class="address__address" aria-label="Наш адрес">
+            ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="adress__wrap-map">
         <iframe class="adress__map"
@@ -199,6 +202,8 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.min.js" defer></script>
 </body>
 
 </html>
