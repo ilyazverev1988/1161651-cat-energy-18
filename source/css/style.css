@@ -1919,15 +1919,15 @@ img {
   margin: 0 auto; }
 
 .profile__wrap-border {
-  padding-bottom: 36px;
+  padding-bottom: 43px;
   border-bottom: 3px solid #68b738;
-  margin-bottom: -17px; }
+  margin-bottom: -46px; }
   .profile__wrap-border--contact {
-    padding-bottom: 25px;
-    margin-bottom: -24px; }
+    padding-bottom: 26px;
+    margin-bottom: -32px; }
   .profile__wrap-border--habits {
-    padding-bottom: 28px;
-    margin-bottom: -25px; }
+    padding-bottom: 26px;
+    margin-bottom: -32px; }
 
 .profile__float-left {
   display: -webkit-box;
@@ -1954,11 +1954,14 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 55px 39px 0;
+  margin: -2px 55px 39px 0;
   text-align: left; }
 
 .profile__wrap-padding {
   border-bottom: 1px solid #ededed; }
+  .profile__wrap-padding--border {
+    margin-bottom: 5px;
+    border-bottom: 3px solid #68b738; }
 
 .profile__wrap,
 .profile__radio,
@@ -1977,16 +1980,15 @@ img {
           box-sizing: border-box; }
 
 .profile__radio {
-  margin-top: 23px;
-  padding-bottom: 6px;
-  margin-bottom: 7px; }
+  margin-top: 24px;
+  padding-bottom: 6px; }
 
 .profile__contact {
   color: #111111;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin: -22px 97px 18px -2px;
+  margin: 3px 97px 18px -2px;
   position: relative;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
@@ -2532,7 +2534,7 @@ img {
   position: relative; }
 
 .add__item {
-  margin-top: 19px; }
+  margin-top: 18.7px; }
 
 .add__input + .add__label::before {
   position: absolute;
@@ -2540,7 +2542,7 @@ img {
   width: 27px;
   height: 27px;
   border: 1px solid #cdcdcd;
-  top: -3px;
+  top: -1px;
   left: 1px; }
 
 .add__input:hover + .add__label::before,
@@ -2555,7 +2557,7 @@ img {
   content: "";
   width: 21px;
   height: 15px;
-  top: 5px;
+  top: 7px;
   left: 6px;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg fill='%2368b738' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 21.1 15.5' style='enable-background:new 0 0 21.1 15.5;' xml:space='preserve'%3E%3Cpolygon points='20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 '/%3E%3C/svg%3E");
   background-repeat: no-repeat; }
