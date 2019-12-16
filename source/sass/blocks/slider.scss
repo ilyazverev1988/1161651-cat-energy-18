@@ -19,6 +19,11 @@
   padding-top: 35px;
 }
 
+.slider__image-fat {
+  width: 311px;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .slider__slider {
     background: none;
@@ -36,6 +41,8 @@
     position: absolute;
     top: -170px;
     left: 48px;
+    width: 690px;
+    height: auto;
   }
 
   .slider__image-thin {
@@ -43,6 +50,8 @@
     position: absolute;
     top: -166px;
     left: 48px;
+    width: 690px;
+    height: auto;
   }
 
   .slider__wrap-image {

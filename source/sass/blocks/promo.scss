@@ -17,6 +17,11 @@
   margin: 0 auto;
 }
 
+.promo__food-image {
+  width: 280px;
+  height: auto;
+}
+
 .promo__food {
   color: #ffffff;
   font-weight: normal;
@@ -127,7 +132,8 @@
     width: 246px;
     font-size: 20px;
     line-height: 20px;
-    margin: 48px 0 0 119px;
+    top: 290px;
+    left: 120px;
     position: absolute;
   }
 
@@ -136,6 +142,8 @@
     order: 2;
     margin-top: 20px;
     margin-left: 30px;
+    width: 709px;
+    height: auto;
   }
 
   .promo__wrap-tablet {
@@ -159,6 +167,8 @@
   .promo__food-image {
     margin-left: 495px;
     margin-top: -261px;
+    width: 552px;
+    height: auto;
   }
 
   .promo__wrap-picture {
@@ -175,6 +185,7 @@
   }
 
   .promo__program {
-    margin: 54px 0 0 124px;
+    top: 345px;
+    left: 124px;
   }
 }

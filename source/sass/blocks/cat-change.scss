@@ -96,6 +96,7 @@
     background-color: #ffffff;
     outline: none;
     cursor: pointer;
+    margin-top: 12px;
   }
   /*область до ие*/
   &::-ms-fill-lower {
@@ -104,6 +105,14 @@
   /*область после ие*/
   &::-ms-fill-upper {
     background-color: #ffffff;
+  }
+
+  @supports (-ms-ime-align: auto) {
+    /*works for all Edge versions (currently up to IE15).*/
+    /*Для Edge нужен сдвиг по вертикали*/
+    &::-ms-track {
+      margin-top: 0;
+    }
   }
 }
 
@@ -118,8 +127,8 @@
 
   .cat-change__range {
     width: 428px;
-    height: 47px;
-    border-radius: 3px;
+    height: 65px;
+    border-radius: 50%;
     outline: none;
     margin-bottom: 13px;
 
@@ -203,11 +212,12 @@
     &::-ms-track {
       width: 428px;
       height: 6px;
-      border-radius: 3px;
       background-color: transparent;
       margin: 0;
       border: none;
-      border-width: 20px 0;
+      margin-top: 16px;
+      border-width: 5px 0;
+      border-radius: 50%;
     }
 
     &::-ms-fill-lower {
@@ -217,9 +227,16 @@
     &::-ms-fill-upper {
       background-color: #dcdcdc;
     }
+
+    @supports (-ms-ime-align: auto) {
+      &::-ms-track {
+        margin-top: 0;
+        border-radius: 50%;
+      }
+    }
   }
-}
-/*&::-webkit-slider-thumb {
+
+  /*&::-webkit-slider-thumb {
       width: 34px;
       height: 34px;
       border-radius: 50%;
@@ -245,8 +262,10 @@
       border: 1px solid #cdcdcd;
       background-color: #ffffff;
     }*/
-@media (min-width: $desktop-width) {
-  .cat-change__time {
-    margin: 27px 13px 38px 20px;
+
+  @media (min-width: $desktop-width) {
+    .cat-change__time {
+      margin: 27px 13px 38px 20px;
+    }
   }
 }

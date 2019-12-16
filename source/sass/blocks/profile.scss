@@ -46,10 +46,7 @@
 }
 
 .profile__wrap-padding {
-  padding: 0 19px;
-  width: 320px;
-  margin: auto;
-  box-sizing: border-box;
+  border-bottom: 1px solid #ededed;
 }
 
 .profile__wrap,
@@ -63,7 +60,10 @@
 
 .profile__wrap,
 .profile__radio {
-  border-bottom: 1px solid #ededed;
+  padding: 0 19px;
+  width: 320px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .profile__radio {
@@ -192,9 +192,9 @@
   }
 
   .profile__wrap-padding {
-    padding: 0;
-    width: auto;
-    padding-top: 3px;
+    border-bottom: none;
+    padding-left: 73px;
+    padding-right: 66px;
 
     &--border {
       border: 1px solid rgba(#cdcdcd, 0.5);
@@ -205,9 +205,9 @@
 
   .profile__wrap,
   .profile__radio {
-    border-bottom: none;
-    padding-left: 73px;
-    padding-right: 66px;
+    padding: 0;
+    width: auto;
+    padding-top: 3px;
   }
 
   .profile__radio {
@@ -310,6 +310,8 @@
     margin: 21px 40px 0 24px;
     padding-top: 70px;
     padding-left: 23px;
+    justify-content: space-between;
+    padding-right: 0;
   }
 
   .profile__radio {
