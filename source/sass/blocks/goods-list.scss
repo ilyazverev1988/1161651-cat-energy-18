@@ -14,7 +14,7 @@
 .goods-list__wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 
 .goods-list__wrap-center {
@@ -48,7 +48,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 12px 0 10px 0;
+  padding: 9px 0 10px 0;
   background-color: #68b738;
   width: 100%;
   text-align: center;
@@ -71,8 +71,8 @@
   }
 
   .goods-list__order {
-    margin-top: -2px;
-    margin-left: -3px;
+    margin-top: 0;
+    margin-left: -7px;
     width: 100%;
     text-align: center;
   }
@@ -88,7 +88,7 @@
   }
 
   .goods-list__desktop-wrap {
-    margin: 28px 33px 0 39px;
+    margin: 28px 35px 0 39px;
   }
 
   .goods-list__wrap {

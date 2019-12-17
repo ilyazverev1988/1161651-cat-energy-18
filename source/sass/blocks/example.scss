@@ -20,7 +20,7 @@
   font-family: $minor-font;
   font-size: 14px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 18.5px;
   padding: 23px 34px 0 20px;
   margin: 0;
 }
@@ -38,12 +38,12 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0 1px;
 }
 
 .example__wrap-spending {
   display: flex;
-  padding-left: 68px;
+  padding-left: 67px;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,7 +67,7 @@
   .example__wrap-center {
     display: flex;
     justify-content: space-between;
-    margin: 49px 31px 0 33px;
+    margin: 51px 31px 0 33px;
   }
 
   .example-list {
@@ -81,6 +81,7 @@
     width: 174px;
     text-align: right;
     margin-bottom: 8px;
+    white-space: nowrap;
   }
 
   .example__wrap-spending {
