@@ -2270,6 +2270,8 @@ img {
     outline: none; }
   .animal__input:invalid {
     border: 2px solid #ff8282; }
+  .animal__input--error {
+    border: 2px solid #ff8282; }
 
 .animal__item {
   display: -webkit-box;
