@@ -30,6 +30,17 @@
   border-radius: 15px;
 }
 
+.select__radio:hover + .select__label::before,
+.select__radio:focus + .select__label::before {
+  border: 1px solid #bababa;
+}
+
+.select__radio:active + .select__label::before,
+.select__radio:active + .select__label::after,
+.select__radio:active + .select__label {
+  opacity: 0.3;
+}
+
 .select__item {
   margin-bottom: 19px;
 }
@@ -38,7 +49,7 @@
   .select__label {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 85px;
+    padding-left: 86px;
   }
 
   .select__item {
@@ -47,7 +58,7 @@
 
   .select__radio + .select__label::before {
     top: -4px;
-    left: 25px;
+    left: 27px;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -55,7 +66,7 @@
 
   .select__radio:checked + .select__label::after {
     top: 7px;
-    left: 36px;
+    left: 38px;
     width: 18px;
     height: 18px;
     border-radius: 9px;
@@ -64,11 +75,11 @@
 
 @media (min-width: $desktop-width) {
   .select__radio:checked + .select__label::after {
-    top: 6px;
-    left: 36.5px;
+    top: 7px;
+    left: 38.5px;
   }
 
   .select__item {
-    margin-top: 32px;
+    margin-top: 33px;
   }
 }

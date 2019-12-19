@@ -21,13 +21,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18.5px;
-  padding: 23px 34px 0 20px;
+  padding: 25px 34px 0 20px;
   margin: 0;
 }
 
 .example-list {
   list-style-type: none;
-  padding: 6px 20px 2px 20px;
+  padding: 8px 20px 2px 20px;
   display: flex;
 }
 
@@ -38,12 +38,12 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 15px 0 0 1px;
+  margin: 14px 0 0 1px;
 }
 
 .example__wrap-spending {
   display: flex;
-  padding-left: 67px;
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,14 +60,14 @@
 
   .example__text {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 24px;
     padding: 63px 35px 0 32px;
   }
 
   .example__wrap-center {
     display: flex;
     justify-content: space-between;
-    margin: 51px 31px 0 33px;
+    margin: 54px 31px 0 33px;
   }
 
   .example-list {
@@ -78,15 +78,14 @@
   .example__spending {
     margin: 0;
     font-size: 20px;
-    width: 174px;
+    width: 175px;
     text-align: right;
-    margin-bottom: 8px;
-    white-space: nowrap;
+    margin-bottom: 9px;
   }
 
   .example__wrap-spending {
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-left: 97px;
   }
 }
@@ -104,7 +103,7 @@
   }
 
   .example__text {
-    padding: 72px 0 0 0;
+    padding: 70px 0 0 0;
   }
 
   .example__wrap.width {
@@ -124,7 +123,7 @@
 
   .example__wrap-center {
     flex-wrap: wrap;
-    margin: 67px 31px 0 0;
+    margin: 68px 31px 0 0;
   }
 
   .example__spending {

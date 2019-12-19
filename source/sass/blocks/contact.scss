@@ -51,6 +51,10 @@
   &:invalid:not(:placeholder-shown) {
     border: 2px solid #ff8282;
   }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .contact__input:focus + .contact__icon-letter,
@@ -63,10 +67,15 @@
   fill: #ff8282;
 }
 
+.contact__input:invalid + .contact__icon-letter,
+.contact__input:invalid + .contact__icon-telephone {
+  fill: #ff8282;
+}
+
 .contact__item {
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   position: relative;
 
   &--comment {

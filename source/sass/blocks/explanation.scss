@@ -13,7 +13,7 @@
 .explanation__list {
   list-style-type: none;
   padding: 0 0 18px 0;
-  margin: 31px 23px 0 21px;
+  margin: 29px 23px 0 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,18 +29,18 @@
   .explanation__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 35px 0 0 31px;
+    margin: 41px 0 0 32px;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .explanation_detail {
-    margin: 75px 0 0 40px;
+    margin: 76px 0 0 43px;
   }
 
   .explanation__list {
-    margin: 74px 0 0 42px;
+    margin: 73px 0 0 42px;
     border-bottom: none;
   }
 

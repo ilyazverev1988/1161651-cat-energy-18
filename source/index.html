@@ -5,7 +5,9 @@
   <meta charset="utf-8" />
   <title>Магазин "Cat energy"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet" />
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
@@ -40,11 +42,18 @@
     <section class="promo">
       <div class="promo__wrap-center width">
         <div class="promo-wrap">
-          <h1 class="promo__food">Функциональное<br> питание для котов</h1>
+          <h1 class="promo__food">Функциональное питание для котов</h1>
           <h2 class="promo__slogan">Занялся собой? Займись котом!</h2>
           <div class="promo__wrap-tablet">
             <div class="promo__wrap-picture">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width :768px)"
+                  srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x"
+                  alt="Вкусная еда Cat Energy с курицей">
+
                 <source media="(min-width: 1300px)"
                   srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
                 <source media="(min-width :768px)"
@@ -53,7 +62,7 @@
                   alt="Вкусная еда Cat Energy с курицей">
               </picture>
             </div>
-            <a class="promo__program" href="">Подобрать программу</a>
+            <a class="promo__program" href="form.html">Подобрать программу</a>
           </div>
         </div>
       </div>
@@ -144,6 +153,12 @@
           <div class="slider__container">
             <div class="slider__wrap-image">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x"
+                  alt="Толстый кот">
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="slider__image-fat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"

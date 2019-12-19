@@ -8,8 +8,8 @@
   margin-bottom: -46px;
 
   &--contact {
-    padding-bottom: 26px;
-    margin-bottom: -32px;
+    padding-bottom: 25px;
+    margin-bottom: -33px;
   }
 
   &--habits {
@@ -28,9 +28,9 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  margin: -2px 0 27px 0;
+  margin: -2px 0 26px 0;
   text-align: center;
-  padding-top: 14px;
+  padding-top: 16px;
   border-top: 1px solid #ededed;
   padding-right: 23px;
 }
@@ -72,8 +72,8 @@
 }
 
 .profile__radio {
-  margin-top: 24px;
-  padding-bottom: 6px;
+  margin-top: 22px;
+  padding-bottom: 5px;
 }
 
 .profile__contact {
@@ -81,7 +81,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin: 3px 97px 18px -2px;
+  margin: 4px 97px 17px -2px;
   position: relative;
   transform: translateY(50%);
   display: inline-block;
@@ -98,12 +98,12 @@
 }
 
 .profile__checkbox {
-  margin: -13px 0 38px 19px;
+  margin: -14px 0 38px 19px;
   padding-top: 25px;
 }
 
 .profile__comment {
-  margin: -13px 21px 0 19px;
+  margin: -12px 21px 0 19px;
   padding-top: 24px;
   padding-bottom: 18px;
 }
@@ -124,7 +124,7 @@
   position: relative;
   cursor: pointer;
   background-color: #68b738;
-  padding: 12px 0 10px 0;
+  padding: 9px 0 11px 0;
   width: 100%;
   white-space: nowrap;
   outline: none;
@@ -134,9 +134,9 @@
     color: rgba(#000000, 0.3);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #5eaa2f;
-    outline: none;
   }
 }
 
@@ -153,7 +153,7 @@
   .profile__wrap-tablet {
     display: flex;
     justify-content: space-between;
-    margin: 29px 153px 72px 51px;
+    margin: 30px 153px 72px 52px;
     align-items: center;
   }
 
@@ -187,7 +187,7 @@
 
   .profile__title-section {
     font-size: 60px;
-    margin: 44px 0 56px 30px;
+    margin: 39px 0 57px 30px;
     border: none;
     float: left;
     text-align: left;
@@ -195,7 +195,7 @@
 
   .profile__write {
     font-size: 20px;
-    margin: 0 0 60px 71px;
+    margin: 0 0 61px 71px;
     line-height: 30px;
   }
 
@@ -232,7 +232,7 @@
     padding-right: 45px;
 
     &--owner {
-      margin: 90px 0 0 31px;
+      margin: 90px 0 0 33px;
     }
 
     &--comment {
@@ -247,7 +247,7 @@
   .profile__about {
     margin: 0;
     padding-bottom: 0;
-    padding-left: 71px;
+    padding-left: 73px;
     padding-right: 64px;
     padding-top: 90px;
     margin-top: 0;
@@ -299,7 +299,7 @@
   }
 
   .profile__title-section {
-    margin: 62px 0 0 43px;
+    margin: 60px 0 0 43px;
     text-align: left;
   }
 

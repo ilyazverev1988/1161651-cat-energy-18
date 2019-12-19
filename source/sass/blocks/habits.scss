@@ -1,6 +1,6 @@
 .habits__letter::placeholder {
   color: #444444;
-  font-size: 15.8px;
+  font-size: 15.9px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
 @media (min-width: $tablet-width) {
   .habits__letter {
     min-height: 174px;
-    padding: 14px 19px;
+    padding: 16px 20px;
     margin-bottom: -10px;
 
     &::placeholder {
