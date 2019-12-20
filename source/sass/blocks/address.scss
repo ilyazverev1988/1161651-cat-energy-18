@@ -9,6 +9,10 @@
   min-height: 114px;
 }
 
+.adress__center {
+  text-align: center;
+}
+
 .address__invite {
   color: #111111;
   font-weight: normal;
@@ -103,7 +107,7 @@
     z-index: 1;
     background-color: white;
     top: 93px;
-    left: 89px;
+    left: calc(50% - 604px);
   }
 
   .address__address {
