@@ -22,9 +22,12 @@
   left: 1px;
 }
 
-.add__input:hover + .add__label::before,
-.add__input:focus + .add__label::before {
+.add__input:hover + .add__label::before {
   border: 1px solid #bababa;
+}
+
+.add__input:focus + .add__label::before {
+  outline: auto;
 }
 
 .add__input:active + .add__label::before {

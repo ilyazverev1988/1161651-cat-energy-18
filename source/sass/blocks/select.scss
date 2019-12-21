@@ -35,6 +35,10 @@
   border: 1px solid #bababa;
 }
 
+.select__radio:focus + .select__label::before {
+  outline: auto;
+}
+
 .select__radio:active + .select__label::before,
 .select__radio:active + .select__label::after,
 .select__radio:active + .select__label {
@@ -80,6 +84,6 @@
   }
 
   .select__item {
-    margin-top: 33px;
+    margin-top: 31.5px;
   }
 }

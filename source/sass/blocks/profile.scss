@@ -98,7 +98,7 @@
 }
 
 .profile__checkbox {
-  margin: -12px 0 40px 19px;
+  margin: -14px 0 39px 19px;
   padding-top: 25px;
 }
 
@@ -153,7 +153,7 @@
   .profile__wrap-tablet {
     display: flex;
     justify-content: space-between;
-    margin: 30px 153px 72px 52px;
+    margin: 28px 153px 72px 52px;
     align-items: center;
   }
 
@@ -255,14 +255,14 @@
   }
 
   .profile__comment {
-    margin: 5px 67px -47px 69px;
+    margin: 4px 67px -47px 69px;
     padding-top: 71px;
   }
 
   .profile__checkbox {
     margin: 0;
-    padding-top: 65px;
-    padding-left: 68px;
+    padding-top: 63px;
+    padding-left: 69px;
   }
 
   .profile__text {
@@ -279,7 +279,7 @@
 
 @media (min-width: $desktop-width) {
   .profile__write {
-    width: 322px;
+    width: 330px;
     margin: 54px 0 2px 45px;
   }
 

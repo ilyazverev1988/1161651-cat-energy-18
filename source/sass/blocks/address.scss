@@ -9,7 +9,7 @@
   min-height: 114px;
 }
 
-.adress__center {
+.address__center {
   text-align: center;
 }
 
@@ -39,13 +39,13 @@
   display: none;
 }
 
-.adress__wrap-map {
+.address__wrap-map {
   overflow: hidden;
   position: relative;
   height: 361px;
 }
 
-.adress__map {
+.address__map {
   left: 0;
   top: 0;
   height: 100%;
@@ -64,7 +64,7 @@
 
 @media (min-width: $tablet-width) {
   .address__container {
-    min-height: 201px;
+    height: 201px;
     align-items: center;
     justify-content: space-between;
   }
@@ -90,11 +90,11 @@
     display: inline;
   }
 
-  .adress__map {
+  .address__map {
     height: 400px;
   }
 
-  .adress__wrap-map {
+  .address__wrap-map {
     height: 400px;
   }
 }
