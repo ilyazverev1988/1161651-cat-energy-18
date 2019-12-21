@@ -1,25 +1,20 @@
 .profile__wrap-center {
   margin: 0 auto;
-
-  &--padding {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 .profile__wrap-border {
-  padding-bottom: 37px;
+  padding-bottom: 43px;
   border-bottom: 3px solid #68b738;
-  margin-bottom: -17px;
+  margin-bottom: -46px;
 
   &--contact {
     padding-bottom: 25px;
-    margin-bottom: -24px;
+    margin-bottom: -33px;
   }
 
   &--habits {
-    padding-bottom: 28px;
-    margin-bottom: -25px;
+    padding-bottom: 26px;
+    margin-bottom: -32px;
   }
 }
 
@@ -33,10 +28,11 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
-  margin: 0 0 24px 0;
+  margin: -2px 0 26px 0;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 16px;
   border-top: 1px solid #ededed;
+  padding-right: 23px;
 }
 
 .profile__write {
@@ -45,14 +41,17 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 96px 39px 0;
+  margin: -2px 55px 39px 0;
   text-align: left;
 }
 
 .profile__wrap-padding {
-  padding: 0 19px;
-  width: 320px;
-  margin: auto;
+  border-bottom: 1px solid #ededed;
+
+  &--border {
+    margin-bottom: 5px;
+    border-bottom: 3px solid #68b738;
+  }
 }
 
 .profile__wrap,
@@ -66,13 +65,15 @@
 
 .profile__wrap,
 .profile__radio {
-  border-bottom: 1px solid #ededed;
+  padding: 0 19px;
+  width: 320px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .profile__radio {
-  margin-top: 23px;
-  padding-bottom: 6px;
-  margin-bottom: 7px;
+  margin-top: 22px;
+  padding-bottom: 5px;
 }
 
 .profile__contact {
@@ -80,7 +81,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin: -23px 94px 18px 0;
+  margin: 4px 97px 17px -2px;
   position: relative;
   transform: translateY(50%);
   display: inline-block;
@@ -93,22 +94,23 @@
 .profile__wrap-necessarily {
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .profile__checkbox {
-  margin: -14px 0 36px 20px;
+  margin: -14px 0 39px 19px;
   padding-top: 25px;
 }
 
 .profile__comment {
-  margin: -17px 20px 0 19px;
+  margin: -12px 21px 0 19px;
   padding-top: 24px;
   padding-bottom: 18px;
 }
 
 .profile__about {
   margin: -20px 20px 18px 19px;
-  padding-top: 59px;
+  padding-top: 60px;
   padding-left: 0;
 }
 
@@ -122,7 +124,7 @@
   position: relative;
   cursor: pointer;
   background-color: #68b738;
-  padding: 13px 0 11px 0;
+  padding: 9px 0 11px 0;
   width: 100%;
   white-space: nowrap;
   outline: none;
@@ -132,9 +134,9 @@
     color: rgba(#000000, 0.3);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #5eaa2f;
-    outline: none;
   }
 }
 
@@ -144,14 +146,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  margin: 18px 0 34px 0;
+  margin: 21px 0 31px -3px;
 }
 
 @media (min-width: $tablet-width) {
   .profile__wrap-tablet {
     display: flex;
     justify-content: space-between;
-    margin: 29px 175px 72px 68px;
+    margin: 28px 153px 72px 52px;
     align-items: center;
   }
 
@@ -171,7 +173,7 @@
 
   .profile__wrap-border {
     padding-bottom: 121px;
-    margin-bottom: -124px;
+    margin-bottom: -131px;
 
     &--contact {
       padding-bottom: 122px;
@@ -179,9 +181,13 @@
     }
   }
 
+  .profile__wrap-border .profile__wrap-border {
+    border: none;
+  }
+
   .profile__title-section {
     font-size: 60px;
-    margin: 57px 0 55px 0;
+    margin: 39px 0 57px 30px;
     border: none;
     float: left;
     text-align: left;
@@ -189,60 +195,74 @@
 
   .profile__write {
     font-size: 20px;
-    margin: 53px 0 61px 0;
+    margin: 0 0 61px 71px;
     line-height: 30px;
   }
 
   .profile__wrap-padding {
-    padding: 0;
-    width: auto;
-    padding-top: 3px;
+    border-bottom: none;
+    padding-left: 73px;
+    padding-right: 66px;
 
     &--border {
       border: 1px solid rgba(#cdcdcd, 0.5);
       width: auto;
-      min-height: 189px;
+      min-height: 196px;
     }
   }
 
   .profile__wrap,
   .profile__radio {
-    border-bottom: none;
+    padding: 0;
+    width: auto;
+    padding-top: 3px;
   }
 
   .profile__radio {
-    margin-top: 49px;
-    margin-bottom: -25px;
+    margin-top: 50px;
+    margin-bottom: -14px;
+    border: 1px solid #cdcdcd;
+    padding-bottom: 12px;
   }
 
   .profile__contact {
     font-size: 36px;
     line-height: 36px;
-    margin: 79px 23px 0 28px;
     padding-left: 38px;
     padding-right: 45px;
+
+    &--owner {
+      margin: 90px 0 0 33px;
+    }
+
+    &--comment {
+      margin: 77px 0 0 33px;
+    }
+
+    &--additionally {
+      margin: 88px 0 0 33px;
+    }
   }
 
   .profile__about {
     margin: 0;
     padding-bottom: 0;
-    padding-left: 70px;
-    padding-right: 67px;
-    padding-top: 89px;
+    padding-left: 73px;
+    padding-right: 64px;
+    padding-top: 90px;
     margin-top: 0;
-    margin-bottom: -51px;
+    margin-bottom: -55px;
   }
 
   .profile__comment {
-    margin: 0 65px -47px 67px;
+    margin: 4px 67px -47px 69px;
     padding-top: 71px;
-    padding-left: 10;
   }
 
   .profile__checkbox {
     margin: 0;
     padding-top: 63px;
-    padding-left: 65px;
+    padding-left: 69px;
   }
 
   .profile__text {
@@ -259,8 +279,8 @@
 
 @media (min-width: $desktop-width) {
   .profile__write {
-    width: 322px;
-    margin: 53px 0 0 32px;
+    width: 330px;
+    margin: 54px 0 2px 45px;
   }
 
   .profile__wrap-border {
@@ -279,29 +299,38 @@
   }
 
   .profile__title-section {
-    margin: 75px 0 0 33px;
+    margin: 60px 0 0 43px;
     text-align: left;
   }
 
   .profile__wrap-desktop {
     display: flex;
-    margin: 62px 40px 0 33px;
+    margin: 60px 32px 0 32px;
   }
 
   .profile__wrap {
-    width: 570px;
-    margin-right: 80px;
+    width: 580px;
+    margin-right: -128px;
+    padding-left: 13px;
+    padding-right: 0;
   }
 
   .profile__about {
     display: flex;
     margin: 21px 40px 0 24px;
-    padding-top: 70px;
-    padding-left: 10px;
+    padding-top: 71px;
+    padding-left: 22px;
+    justify-content: space-between;
+    padding-right: 0;
   }
 
   .profile__radio {
     margin: 0;
+    margin-left: 210px;
+    padding: 0;
+    margin-top: 3px;
+    min-width: 567px;
+    padding-bottom: 13px;
   }
 
   .profile__wrap-padding--border {
@@ -311,32 +340,45 @@
 
   .profile__wrap-padding {
     margin: 0;
+    padding: 0;
   }
 
   .profile__contact {
-    margin: 73px 0 0 -7px;
+    padding-left: 44px;
 
     &::before {
       width: 750px;
       top: 23px;
       left: 525px;
     }
+
+    &--owner {
+      margin: 73px 0 0 0;
+    }
+
+    &--comment {
+      margin: 75px 0 0 0;
+    }
+
+    &--additionally {
+      margin: 74px 0 0 0;
+    }
   }
 
   .profile__comment {
-    margin: 0 40px 0 30px;
-    padding-top: 71px;
-    padding-left: 10px;
+    margin: 0 35px 0 30px;
+    padding-top: 74px;
+    padding-left: 13px;
   }
 
   .profile__checkbox {
-    margin: 17px 0 0 34px;
-    padding-top: 64px;
+    margin: 17px 0 0 47px;
+    padding-top: 66px;
     padding-left: 10px;
   }
 
   .profile__wrap-tablet {
-    margin: 68px 438px 91px 33px;
+    margin: 68px 406px 83px 27px;
   }
 
   .profile__submit--green::before {

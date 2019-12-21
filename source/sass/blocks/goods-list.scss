@@ -5,7 +5,6 @@
   align-items: stretch;
   min-height: 128px;
   border-bottom: 1px solid #cdcdcd;
-  padding-bottom: 17px;
 }
 
 .goods-list__item:first-child {
@@ -15,7 +14,7 @@
 .goods-list__wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 27px;
+  margin-bottom: 12px;
 }
 
 .goods-list__wrap-center {
@@ -30,7 +29,7 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  margin: 14px 0 15px 0;
+  margin: 14px 0 13px 0;
 }
 
 .goods-list__text {
@@ -49,10 +48,11 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 13px 0 12px 0;
+  padding: 10px 0 10px 0;
   background-color: #68b738;
   width: 100%;
   text-align: center;
+  margin-top: 2px;
 
   &:active {
     color: rgba(#000000, 0.3);
@@ -71,14 +71,14 @@
   }
 
   .goods-list__order {
-    margin-top: -2px;
-    margin-left: -3px;
+    margin-top: 0;
+    margin-left: -7px;
     width: 100%;
     text-align: center;
   }
 
   .goods-list__item {
-    min-height: 137px;
+    min-height: 138px;
     border: 1px solid rgba(#cdcdcd, 0.5);
     border-bottom: none;
   }
@@ -88,7 +88,7 @@
   }
 
   .goods-list__desktop-wrap {
-    margin: 27px 39px 0 39px;
+    margin: 28px 34px 0 39px;
   }
 
   .goods-list__wrap {
@@ -111,6 +111,10 @@
   .goods-list__text + .goods-list__text--margin {
     margin-left: 53px;
   }
+
+  .goods-list__text + .goods-list__text--margin2 {
+    margin-left: 63px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -126,6 +130,7 @@
     border-left: none;
     border-right: none;
     border-bottom: none;
+    padding-right: 10px;
   }
 
   .goods-list__item:last-child {
@@ -138,6 +143,7 @@
 
   .goods-list__title {
     line-height: 20px;
+    margin-left: 10px;
   }
 
   .goods-list__text {
@@ -145,7 +151,7 @@
   }
 
   .goods-list__table-wrap {
-    width: 610px;
+    width: 625px;
     display: flex;
     justify-content: space-between;
   }
@@ -153,11 +159,11 @@
   .goods-list__wrap {
     display: flex;
     justify-content: space-between;
-    width: 289px;
+    width: 290px;
   }
 
   .goods-list__text + .goods-list__text--margin {
-    margin-left: 113px;
+    margin-left: 111px;
   }
 
   .goods-list__order--green::before {
@@ -167,8 +173,12 @@
   }
 
   .goods-list__order {
-    margin-top: -8px;
-    margin-right: 18px;
+    margin-top: -10px;
+    margin-right: 5px;
     width: 245px;
+  }
+
+  .goods-list__text + .goods-list__text--margin2 {
+    margin-right: 12px;
   }
 }

@@ -1,6 +1,15 @@
-.social-list__item:nth-child(2n) {
-  margin-left: 37px;
-  margin-right: 40px;
+.social-list__item {
+  margin-top: 20px;
+}
+
+.social-list__fb {
+  margin-left: -3px;
+  margin-top: 3px;
+}
+
+.social-list__inst {
+  margin-left: -6px;
+  margin-top: 3px;
 }
 
 .social-list__vk:hover,
@@ -28,15 +37,25 @@
   .social-list__inst {
     width: 23px;
     height: 23px;
+    margin-left: -2px;
+    margin-top: 0;
   }
 
   .social-list__fb {
     width: 14px;
     height: 28px;
+    margin-top: -3px;
+    margin-left: -3px;
   }
 
   .social-list__item:nth-child(2n) {
     margin-left: 28px;
     margin-right: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__item {
+    margin-top: 30px;
   }
 }

@@ -16,7 +16,7 @@
   width: 100%;
   margin-left: 16px;
   min-height: 45px;
-  padding-left: 12px;
+  padding-left: 14px;
   font-family: $main-font;
   border: 1px solid rgba(#cdcdcd, 0.5);
   box-sizing: border-box;
@@ -34,6 +34,10 @@
   &:invalid {
     border: 2px solid #ff8282;
   }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
 }
 
 .animal__item {
@@ -42,8 +46,8 @@
   margin-bottom: 14px;
 
   &:last-child {
-    margin: 0;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
+    margin-bottom: 0;
   }
 }
 
@@ -57,10 +61,15 @@
     font-size: 20px;
     line-height: 20px;
     min-height: 52px;
-    padding-left: 16px;
+    padding-left: 19px;
   }
 
   .animal__item {
     margin-bottom: 20px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

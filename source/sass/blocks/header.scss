@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 20px 11px 20px;
+  padding: 11px 0 11px 0;
   width: 320px;
   margin: 0 auto;
 }
@@ -25,6 +25,7 @@
   position: relative;
   outline: none;
   cursor: pointer;
+  margin-right: 20px;
 
   &::before {
     content: "";
@@ -47,6 +48,7 @@
   position: relative;
   outline: none;
   cursor: pointer;
+  margin-right: 20px;
 
   &::before {
     content: "";
@@ -62,6 +64,8 @@
 }
 
 .header__logo {
+  margin-left: 20px;
+
   &--active {
     pointer-events: none;
   }
@@ -81,7 +85,7 @@
     display: none;
   }
 
-  &--active {
+  .header__menu--active {
     display: block;
   }
 
@@ -102,7 +106,7 @@
   .header__nav {
     display: flex;
     align-items: center;
-    margin: 24px 31px 0 29px;
+    margin: 24px auto 0 auto;
   }
 
   .header__conteiner {
@@ -116,16 +120,13 @@
   .header__list {
     display: flex;
     white-space: nowrap;
-    margin-top: 11px;
-  }
-
-  .header__wrapper {
-    margin-left: 96px;
+    margin-top: 12px;
   }
 
   .header__wrap {
     padding: 0;
     border-bottom: none;
+    margin: 0 -31px 0 12px;
   }
 
   .header__logo {
@@ -140,12 +141,19 @@
     margin: 0;
   }
 
+  .header__wrap {
+    margin-left: -8px;
+  }
+
   .header__list {
     display: flex;
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .header__wrapper {
-    margin-left: 531px;
+    margin-left: 560px;
   }
 
   .header__logo {
@@ -162,15 +170,14 @@
       top: 0;
       right: 0;
       width: 50%;
-      height: 703px;
-      background-color: #63a73a;
-      background-image: url("../img/index-background-desktop@1x.jpg");
+      height: 100%;
+      background: #63a73a url("../img/index-background-desktop@1x.jpg");
       z-index: -3;
-      background-position: right;
+      background-position: right top;
       background-repeat: no-repeat;
 
       @media (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
+        background: #63a73a url("../img/index-background-desktop@2x.jpg");
         background-size: 720px auto;
       }
     }

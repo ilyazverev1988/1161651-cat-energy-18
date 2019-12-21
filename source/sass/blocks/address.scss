@@ -9,6 +9,10 @@
   min-height: 114px;
 }
 
+.address__center {
+  text-align: center;
+}
+
 .address__invite {
   color: #111111;
   font-weight: normal;
@@ -16,8 +20,8 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 126px;
-  margin-top: 27px;
-  margin-left: 21px;
+  margin-top: 28px;
+  margin-left: 20px;
 }
 
 .address__address {
@@ -26,18 +30,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  width: 135px;
+  width: 136px;
   margin-top: 28px;
   margin-left: 15px;
 }
 
-.adress__wrap-map {
+.address__address br {
+  display: none;
+}
+
+.address__wrap-map {
   overflow: hidden;
   position: relative;
   height: 361px;
 }
 
-.adress__map {
+.address__map {
   left: 0;
   top: 0;
   height: 100%;
@@ -48,52 +56,61 @@
 
 .address__wrap-background {
   background-color: white;
+
+  &--gray {
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .address__container {
-    min-height: 201px;
+    height: 201px;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .address__wrap-background {
-    background-color: #f2f2f2;
   }
 
   .address__invite {
     font-size: 20px;
     line-height: 25px;
-    width: 139px;
-    margin-left: 70px;
-    margin-top: 27px;
+    width: 155px;
+    margin-left: 73px;
+    margin-top: 26px;
   }
 
   .address__address {
     width: 159px;
     font-size: 16px;
-    margin-top: 1px;
-    margin-right: 72px;
+    margin-top: 23px;
+    margin-right: 71px;
     text-align: right;
+    min-height: 76px;
   }
 
-  .adress__map {
+  .address__address br {
+    display: inline;
+  }
+
+  .address__map {
     height: 400px;
   }
 
-  .adress__wrap-map {
+  .address__wrap-map {
     height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .address__container.width {
-    width: 570px;
+    width: 554px;
     height: 201px;
     position: absolute;
     z-index: 1;
     background-color: white;
-    top: 130px;
-    left: 5px;
+    top: 93px;
+    left: calc(50% - 604px);
+  }
+
+  .address__address {
+    text-align: left;
   }
 }
