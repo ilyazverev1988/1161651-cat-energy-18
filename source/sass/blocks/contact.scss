@@ -51,10 +51,18 @@
   &:invalid:not(:placeholder-shown) {
     border: 2px solid #ff8282;
   }
+}
 
-  &:invalid {
-    border: 2px solid #ff8282;
-  }
+.contact__input--error {
+  border: 2px solid #ff8282;
+}
+
+.contact__icon-letter--error {
+  fill: #ff8282;
+}
+
+.contact__icon-telephone--error {
+  fill: #ff8282;
 }
 
 .contact__input:focus + .contact__icon-letter,
@@ -64,11 +72,6 @@
 
 .contact__input:invalid:not(:placeholder-shown) + .contact__icon-letter,
 .contact__input:invalid:not(:placeholder-shown) + .contact__icon-telephone {
-  fill: #ff8282;
-}
-
-.contact__input:invalid + .contact__icon-letter,
-.contact__input:invalid + .contact__icon-telephone {
   fill: #ff8282;
 }
 

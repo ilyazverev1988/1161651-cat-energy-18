@@ -31,13 +31,17 @@
     outline: none;
   }
 
-  &:invalid {
+  /*&:invalid {
     border: 2px solid #ff8282;
   }
 
   &--error {
     border: 2px solid #ff8282;
-  }
+  }*/
+}
+
+.animal__input--error {
+  border: 2px solid #ff8282;
 }
 
 .animal__item {
