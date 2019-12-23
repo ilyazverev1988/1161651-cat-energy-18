@@ -12,6 +12,10 @@
   display: none;
 }
 
+.slider_show {
+  display: block;
+}
+
 .slider__wrap-image {
   background-color: #f2f2f2;
   display: flex;
@@ -38,6 +42,14 @@
   }
 
   .slider__image-fat {
+    position: absolute;
+    top: -170px;
+    left: 48px;
+    width: 690px;
+    height: auto;
+  }
+
+  .slider__image-thin {
     position: absolute;
     top: -170px;
     left: 48px;
